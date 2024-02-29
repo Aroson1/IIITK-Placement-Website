@@ -1,6 +1,6 @@
 import Image from "next/image";
 import NavBar from "./components/navbar";
-
+import Footer from "./components/footer";
 import Hero from "./sections/hero_section";
 import Brochures from "./sections/brochures_section";
 import About from "./sections/about_section";
