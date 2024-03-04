@@ -13,7 +13,7 @@ export default function Hero() {
         justifyContent: "center",
         alignItems: "flex-start",
         gap: 75,
-        display: "inline-flex",
+        display: "flex", // Changed from "inline-flex" to "flex"
       }}
     >
       <div
@@ -26,13 +26,40 @@ export default function Hero() {
         }}
       >
         <div>
-          <span style="color: '#1A202C', fontSize: 45, fontFamily: 'Inter', fontWeight: '300', lineHeight: 71, wordWrap: 'break-word'">
+          <span
+            style={{
+              color: "#1A202C",
+              fontSize: 45,
+              fontFamily: "Inter",
+              fontWeight: "300",
+              lineHeight: 71,
+              wordWrap: "break-word",
+            }}
+          >
             Welcome to IIITK{" "}
           </span>
-          <span style="color: '#1A202C', fontSize: 53, fontFamily: 'Inter', fontWeight: '300', lineHeight: 71, wordWrap: 'break-word'">
+          <span
+            style={{
+              color: "#1A202C",
+              fontSize: 53,
+              fontFamily: "Inter",
+              fontWeight: "300",
+              lineHeight: 71,
+              wordWrap: "break-word",
+            }}
+          >
             <br />
           </span>
-          <span style="color: '#1A202C', fontSize: 53, fontFamily: 'Inter', fontWeight: '800', lineHeight: 71, wordWrap: 'break-word'">
+          <span
+            style={{
+              color: "#1A202C",
+              fontSize: 53,
+              fontFamily: "Inter",
+              fontWeight: "800",
+              lineHeight: 71,
+              wordWrap: "break-word",
+            }}
+          >
             PLACEMENT CELL
           </span>
         </div>
@@ -63,7 +90,7 @@ export default function Hero() {
           justifyContent: "center",
           alignItems: "center",
           gap: 10,
-          display: "inline-flex",
+          display: "flex", // Changed from "inline-flex" to "flex"
         }}
       >
         <div
