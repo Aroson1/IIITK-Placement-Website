@@ -3,10 +3,10 @@ import * as React from "react";
 import Carousel from "nuka-carousel";
 import "../styles/brochures.css";
 import Image from "next/image";
-import circle from "../assets/circle.png";
-import next from "../assets/next.svg";
-import prev from "../assets/prev.svg";
-import stats from "../assets/stats.svg";
+import circle from "../../public/circle.png";
+import next from "../../public/next.svg";
+import prev from "../../public/prev.svg";
+import stats from "../../public/stats.svg";
 const renderBottomCenterControls = ({
   slideCount,
   nextSlide,

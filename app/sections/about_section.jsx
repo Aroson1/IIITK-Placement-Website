@@ -1,7 +1,7 @@
 import * as React from "react";
-import logo from "../assets/logok.svg";
+import logo from "../../public/logok.svg";
 import Image from "next/image";
-import arrow from "../assets/stats.svg";
+import arrow from "../../public/stats.svg";
 
 export default function About() {
   return (
@@ -52,22 +52,16 @@ export default function About() {
                       style={{ color: "rgba(113, 128, 150, 1)" }}
                     >
                       The IIIT Kottayam Placement Cell aims to facilitate the
-                      <br />
                       professional growth of students by bridging the gap
-                      <br />
                       between{" "}
                       <span style={{ color: "rgba(78, 220, 72, 1)" }}>
                         academia and the industry
                       </span>
-                      . By collaborating
-                      <br />
-                      with corporate firms and providing training programs,
-                      <br />
-                      the Placement Cell opens up opportunities for students
-                      <br />
-                      to gain industry exposure, guidance and the necessary
-                      <br />
-                      skills to succeed in their careers
+                      . By collaborating with corporate firms and providing
+                      training programs, the Placement Cell opens up
+                      opportunities for students to gain industry exposure,
+                      guidance and the necessary skills to succeed in their
+                      careers
                     </div>
                   </div>
                 </div>
