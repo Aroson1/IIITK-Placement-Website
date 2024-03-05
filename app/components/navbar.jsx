@@ -1,174 +1,23 @@
-export default function Navbar() {
+import * as React from "react";
+
+export default function Navbar(props) {
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "100%",
-        paddingLeft: 25,
-        paddingRight: 25,
-        paddingTop: 10,
-        paddingBottom: 10,
-        background: "white",
-        boxShadow: "0px 4px 40px rgba(0, 0, 0, 0.10)",
-        justifyContent: "space-between",
-        alignItems: "center",
-        display: "inline-flex",
-      }}
-    >
-      <div
-        style={{
-          color: "#198F1F",
-          fontSize: 24,
-          fontFamily: "Inter",
-          fontWeight: "600",
-          lineHeight: 32.77,
-          wordWrap: "break-word",
-        }}
-      >
-        Placement cell
+    <div className="flex gap-5 justify-between items-center px-16 py-2.5 font-semibold bg-white shadow-2xl max-md:flex-wrap max-md:px-5">
+      <div className="flex cursor-pointer self-stretch my-auto text-2xl leading-8 text-green-700">
+        SPC | <span>IIITK</span>
+      </div>
+      <div className="flex gap-12 justify-between self-stretch py-2.5 text-base font-medium leading-6 text-slate-600 max-md:flex-wrap max-md:max-w-full">
+        <div className="cursor-pointer grow">Home</div>
+        <div className="cursor-pointer">For Students</div>
+        <div className="flex-auto cursor-pointer">For Recruiters</div>
+        <div className="cursor-pointer">About IIITK</div>
+        <div className="cursor-pointer grow whitespace-nowrap">Contact Us</div>
       </div>
       <div
-        style={{
-          height: 45,
-          paddingTop: 10,
-          paddingBottom: 10,
-          justifyContent: "space-between",
-          alignItems: "center",
-          display: "flex",
-        }}
+        style={{ backgroundColor: "green" }}
+        className="cursor-pointer justify-center px-6 py-3.5 text-sm font-semibold leading-4 whitespace-nowrap rounded-md shadow-sm text-neutral-50"
       >
-        <div
-          style={{
-            justifyContent: "flex-start",
-            alignItems: "center",
-            gap: 10,
-            display: "flex",
-          }}
-        >
-          <div
-            style={{
-              color: "#4A5568",
-              fontSize: 16,
-              fontFamily: "Inter",
-              fontWeight: "500",
-              lineHeight: 25,
-              wordWrap: "break-word",
-            }}
-          >
-            Home
-          </div>
-        </div>
-        <div
-          style={{
-            justifyContent: "flex-start",
-            alignItems: "center",
-            gap: 10,
-            display: "flex",
-          }}
-        >
-          <div
-            style={{
-              color: "#4A5568",
-              fontSize: 16,
-              fontFamily: "Inter",
-              fontWeight: "500",
-              lineHeight: 25,
-              wordWrap: "break-word",
-            }}
-          >
-            For Students
-          </div>
-        </div>
-        <div
-          style={{
-            justifyContent: "flex-start",
-            alignItems: "center",
-            gap: 10,
-            display: "flex",
-          }}
-        >
-          <div
-            style={{
-              color: "#4A5568",
-              fontSize: 16,
-              fontFamily: "Inter",
-              fontWeight: "500",
-              lineHeight: 25,
-              wordWrap: "break-word",
-            }}
-          >
-            For Recruiters
-          </div>
-        </div>
-        <div
-          style={{
-            justifyContent: "flex-start",
-            alignItems: "center",
-            gap: 10,
-            display: "flex",
-          }}
-        >
-          <div
-            style={{
-              color: "#4A5568",
-              fontSize: 16,
-              fontFamily: "Inter",
-              fontWeight: "500",
-              lineHeight: 25,
-              wordWrap: "break-word",
-            }}
-          >
-            About IIITK
-          </div>
-        </div>
-        <div
-          style={{
-            justifyContent: "flex-start",
-            alignItems: "center",
-            gap: 10,
-            display: "flex",
-          }}
-        >
-          <div
-            style={{
-              color: "#4A5568",
-              fontSize: 16,
-              fontFamily: "Inter",
-              fontWeight: "500",
-              lineHeight: 25,
-              wordWrap: "break-word",
-            }}
-          >
-            Contact Us
-          </div>
-        </div>
-      </div>
-      <div
-        style={{
-          paddingLeft: 25,
-          paddingRight: 25,
-          paddingTop: 14,
-          paddingBottom: 14,
-          background: "linear-gradient(225deg, #0B7F0F 0%, #73EF80 100%)",
-          borderRadius: 5,
-          justifyContent: "center",
-          alignItems: "center",
-          gap: 10,
-          display: "flex",
-        }}
-      >
-        <div
-          style={{
-            color: "#FAFAFA",
-            fontSize: 14,
-            fontFamily: "Inter",
-            fontWeight: "600",
-            lineHeight: 14,
-            wordWrap: "break-word",
-          }}
-        >
-          Login/Register
-        </div>
+        Login/Register
       </div>
     </div>
   );
