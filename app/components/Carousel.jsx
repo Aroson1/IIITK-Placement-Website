@@ -1,5 +1,4 @@
 "use client";
-
 import * as React from "react";
 import Carousel from "nuka-carousel";
 import "../styles/style.css";
@@ -9,53 +8,9 @@ import btnright from "../../public/Btn-right.svg";
 import leftcomma from "../../public/left-comma.svg";
 import rightcomma from "../../public/right-comma.svg";
 
-const customImageStyle = {
-  filter: "brightness(100%)", // Adjust brightness as needed
-  opacity: 1, // Set opacity to 1 for full visibility
-};
-
-const renderBottomCenterControls = ({
-  slideCount,
-  previousSlide,
-  currentSlide,
-}) => (
-  <div className="bottom">
-    <div>{`${currentSlide + 1} / ${slideCount}`}</div>
-    <button
-      className="slider-control-button"
-      onClick={previousSlide}
-      disabled={currentSlide === 0}
-    >
-      {/* <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#000000"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <path d="M15 18l-6-6 6-6" />
-      </svg> */}
-    </button>
-  </div>
-);
-
 const renderCenterLeftControls = ({ previousSlide, currentSlide }) => (
-  <button
-    className="slider-control-button"
-    onClick={previousSlide}
-    disabled={currentSlide === 0}
-  >
-    <Image
-      src={btnleft}
-      alt="left-button"
-      width={70}
-      height={70}
-      style={customImageStyle}
-    />
+  <button onClick={previousSlide} disabled={currentSlide === 0}>
+    <Image src={btnleft} alt="left-button" width={70} height={70} />
   </button>
 );
 
@@ -65,40 +20,25 @@ const renderCenterRightControls = ({
   slideCount,
   slidesToShow,
 }) => {
-  console.log(currentSlide, slideCount, slidesToShow);
   return (
     <button
-      className="slider-control-button"
       onClick={nextSlide}
       disabled={currentSlide + slidesToShow === slideCount}
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#000000"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <path d="M9 18l6-6-6-6" />
-      </svg>
+      <Image src={btnleft} alt="right-button" width={70} height={70} />
     </button>
   );
 };
 
 export default function Slider2() {
   const colors = [
-    <div>
+    <div className="px-10 ">
       <div>
-        <div className="flex gap-1 justify-between px-5 mt-14 w-full max-md:flex-wrap max-md:mt-10 max-md:max-w-[80%] ">
+        <div className="flex gap-1 justify-between px-5 mt-0   w-full max-md:flex-wrap max-md:mt-10 max-md:max-w-[80%] ">
           <div className="max-md:max-w-full flex gap-5 max-md:flex-col max-md:gap-0">
-            <Image src={btnleft} alt="left-button" layout="intrinsic" />
             <div className="flex flex-col w-[37%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col text-base font-extrabold leading-9 text-white max-md:mt-6">
-                <div className="flex gap-5 justify-between mt-4">
+                <div className="flex gap-5 pl-11  mt-4">
                   <div
                     className="flex flex-col items-center pb-6 text-base font-extrabold leading-9 text-white whitespace-nowrap w-[279px] h-[366px] rounded-[42px]"
                     style={{
@@ -172,7 +112,6 @@ export default function Slider2() {
                 className="self-end aspect-[0.58] max-md:mt-10"
               />
             </div>
-            <Image src={btnright} alt="right-button" layout="intrinsic" />
           </div>
         </div>
       </div>
@@ -181,7 +120,6 @@ export default function Slider2() {
       <div>
         <div className="flex gap-1 justify-between px-5 mt-14 w-full max-md:flex-wrap max-md:mt-10 max-md:max-w-[80%] ">
           <div className="max-md:max-w-full flex gap-5 max-md:flex-col max-md:gap-0">
-            <Image src={btnleft} alt="left-button" layout="intrinsic" />
             <div className="flex flex-col w-[37%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col text-base font-extrabold leading-9 text-white max-md:mt-6">
                 <img
@@ -243,7 +181,6 @@ export default function Slider2() {
                 With Best Wishes!
               </div>
             </div>
-            <Image src={btnright} alt="right-button" layout="intrinsic" />
           </div>
           <img
             loading="lazy"
@@ -257,7 +194,6 @@ export default function Slider2() {
       <div>
         <div className="flex gap-1 justify-between px-5 mt-14 w-full max-md:flex-wrap max-md:mt-10 max-md:max-w-[80%] ">
           <div className="max-md:max-w-full flex gap-5 max-md:flex-col max-md:gap-0">
-            <Image src={btnleft} alt="left-button" layout="intrinsic" />
             <div className="flex flex-col w-[37%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col text-base font-extrabold leading-9 text-white max-md:mt-6">
                 <img
@@ -319,7 +255,6 @@ export default function Slider2() {
                 With Best Wishes!
               </div>
             </div>
-            <Image src={btnright} alt="right-button" layout="intrinsic" />
           </div>
           <img
             loading="lazy"
@@ -346,7 +281,6 @@ export default function Slider2() {
         slideIndex={index}
         disableEdgeSwiping={false}
         dragThreshold={0.2}
-        renderBottomCenterControls={renderBottomCenterControls}
         renderCenterLeftControls={renderCenterLeftControls}
         renderCenterRightControls={renderCenterRightControls}
       >

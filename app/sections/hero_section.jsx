@@ -1,24 +1,56 @@
 import * as React from "react";
-import heroimage from "../../public/Hero-Wrapper__image.png";
+import heroimage from "../../public/college.jpeg";
+import Image from "next/image";
 
-export default function Hero(props) {
+export default function Hero() {
   return (
-    <div className="flex w-screen justify-center">
-      <div className="flex justify-center w-3/4 items-start px-11 py-12 shadow-2xl max-md:px-5">
+    <div className="flex w-[100vw] justify-center">
+      <div className="flex justify-between w-[90%] items-start shadow-2xl max-md:px-5">
         <div className="flex flex-col">
-          <div className="mt-8 text-5xl font-extrabold text-gray-900 bg-clip-text leading-[71px] max-md:text-4xl max-md:leading-[59px]">
+          <div className="pl-11 pt-14  mt-8 text-5xl font-extrabold text-gray-900 bg-clip-text leading-[71px] max-md:text-4xl max-md:leading-[59px]">
             <span className="text-5xl font-light">Welcome to IIITK </span>
             <br />
-            STUDENTS <br />
-            PLACEMENT <br />
-            COMMITEE
-          </div>
-          <div className="w-[126px] text-center cursor-pointer bg-green-700 py-3.5 mt-20 text-sm font-semibold whitespace-nowrap rounded-md text-neutral-50 max-md:px-5 max-md:mt-10">
-            Contact Us
+            <span
+              style={{
+                color: "#0B7F0F",
+              }}
+            >
+              S
+            </span>
+            TUDENTS <br />
+            <span
+              style={{
+                color: "#66E071",
+              }}
+            >
+              P
+            </span>
+            LACEMENT <br />
+            <span
+              style={{
+                color: "#67E272",
+              }}
+            >
+              C
+            </span>
+            OMMITEE
+            <div
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(103, 226, 114, 1), rgba(22, 139, 27, 1))",
+              }}
+              className="w-[126px] text-center cursor-pointer py-3.5 mt-0  text-sm font-semibold whitespace-nowrap rounded-md text-neutral-50 max-md:px-5 max-md:mt-10"
+            >
+              Contact Us
+            </div>
           </div>
         </div>
-        <div>
-          <img src={heroimage} />
+        <div className="max-w-[60%]">
+          <Image
+            src={heroimage}
+            alt="hero-image"
+            className="object-fill h-full"
+          />
         </div>
       </div>
     </div>
