@@ -25,7 +25,13 @@ const renderCenterRightControls = ({
       onClick={nextSlide}
       disabled={currentSlide + slidesToShow === slideCount}
     >
-      <Image src={btnleft} alt="right-button" width={70} height={70} />
+      <Image
+        src={btnleft}
+        alt="right-button"
+        width={70}
+        height={70}
+        style={{ transform: "rotate(-180deg)" }}
+      />
     </button>
   );
 };
