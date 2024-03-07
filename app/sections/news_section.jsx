@@ -3,7 +3,7 @@ import photo from "../../public/Photo.png";
 
 const News = () => {
   return (
-    <div>
+    <div id="news">
       <div className="flex flex-col">
         <div
           style={{

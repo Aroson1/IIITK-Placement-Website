@@ -7,7 +7,7 @@ import "../students.scss";
 const Highlights = () => {
     return (
         <>
-            <section className="self-stretch flex flex-row items-start justify-start py-0 pr-[13px] pl-[25px] box-border max-w-full shrink-0 text-center text-16xl text-gray-gray-900 font-footer-footer-sm">
+            <section className="self-stretch flex flex-row items-start justify-start py-0 pr-[13px] pl-[25px] box-border max-w-full shrink-0 text-center text-16xl text-gray-gray-900 font-footer-footer-sm" id="highlights">
                 <div className="flex-1 flex flex-col items-center justify-start gap-[27px_0px] max-w-full">
                     <div className="w-[480px] flex flex-row items-start justify-start py-0 pr-1.5 pl-0 box-border max-w-full">
                         <div className="flex-1 flex flex-col items-center justify-start gap-[20px_0px] max-w-full">
