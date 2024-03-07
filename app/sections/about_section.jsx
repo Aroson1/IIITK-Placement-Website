@@ -8,6 +8,7 @@ export default function About() {
     <div
       className="flex flex-col"
       style={{ paddingLeft: "80px", paddingRight: "30px" }}
+      id="about"
     >
       <div className="w-full max-md:max-w-full  mb-2">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">

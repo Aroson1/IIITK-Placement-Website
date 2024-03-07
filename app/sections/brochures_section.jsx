@@ -56,6 +56,7 @@ function Slider1() {
         width: "auto",
         paddingLeft: "200px",
       }}
+      id="brochures"
     >
       <Carousel
         slidesToScroll={1}
