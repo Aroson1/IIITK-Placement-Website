@@ -4,13 +4,8 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-<<<<<<< Updated upstream
-    <div className="flex w-[100vw] justify-center">
-      <div className="flex justify-between w-[90%] items-start shadow-2xl max-md:px-5">
-=======
     <div className="flex w-screen justify-center" id="hero">
       <div className="flex justify-center w-3/4 items-start px-11 py-12 shadow-2xl max-md:px-5">
->>>>>>> Stashed changes
         <div className="flex flex-col">
           <div className="pl-11 pt-14  mt-8 text-5xl font-extrabold text-gray-900 bg-clip-text leading-[71px] max-md:text-4xl max-md:leading-[59px]">
             <span className="text-5xl font-light">Welcome to IIITK </span>
