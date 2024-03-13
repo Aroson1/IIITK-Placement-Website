@@ -9,13 +9,13 @@ import '../styles/footer.css';
 const Footer = () => {
   return (
     <footer >
-    <div class="content">
-      <div class="top">
-        <div class="logo-details">
-          <i class="fab fa-slack"></i>
-          <span class="logo_name"><img src="./LogoLong.png" alt="" className='w-50'/></span>
+    <div className="content">
+      <div className="top">
+        <div className="logo-details">
+          <i className="fab fa-slack"></i>
+          <span className="logo_name"><img src="./LogoLong.png" alt="" className='w-50'/></span>
         </div>
-        <div class="media-icons">
+        <div className="media-icons">
           <a href="#" className='flex justify-center align-center'><FontAwesomeIcon icon={faFacebookF} className='w-50'/></a>
           <a href="#" className='flex justify-center align-center'><FontAwesomeIcon icon={faInstagram} className='w-50'/></a>
           <a href="#" className='flex justify-center align-center'><FontAwesomeIcon icon={faLinkedinIn} className='w-50'/></a>
@@ -24,14 +24,14 @@ const Footer = () => {
 
         </div>
       </div>
-      <div class="link-boxes">
+      <div className="link-boxes">
         <ul className='box'>
           <li>
               Placeholder text.........
           </li>
         </ul>
-        <ul class="box">
-          <li class="link_name">Links</li>
+        <ul className="box">
+          <li className="link_name">Links</li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Case Studies</a></li>
@@ -41,8 +41,8 @@ const Footer = () => {
         </ul>
         
         
-        <ul class="box input-box">
-          <li class="link_name">Contact Us</li>
+        <ul className="box input-box">
+          <li className="link_name">Contact Us</li>
           <li>Phone no: <a href="#">+181 23765 43210</a></li>
           <li>Email: <a href="mailto:hello@gmail.com">IIITK-PTC@iiitkottayam.ac.in</a> </li>
           <li><input type="text" placeholder="Enter your email"/></li>
@@ -50,10 +50,10 @@ const Footer = () => {
         </ul>
       </div>
     </div>
-    <div class="bottom-details">
-      <div class="bottom_text">
-        <span class="copyright_text">Copyright © 2024 <a href="#">IIIT-K.</a>All rights reserved</span>
-        <span class="policy_terms">
+    <div className="bottom-details">
+      <div className="bottom_text">
+        <span className="copyright_text">Copyright © 2024 <a href="#">IIIT-K.</a>All rights reserved</span>
+        <span className="policy_terms">
           <a href="#">Privacy policy</a>
           <a href="#">Terms & condition</a>
         </span>
