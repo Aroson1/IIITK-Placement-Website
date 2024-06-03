@@ -1,13 +1,14 @@
+'use client';
 import React from 'react';
-var $ = require('jquery');
+// var $ = require('jquery');
 import Image from 'next/image';
 // import ocean from '../../public/images/ocean-g2ba1bb5c0_1280.jpg'/;
 import sea from '../../public/images/sea-g879f4f00d_1280.jpg';
 import woman from '../../public/images/woman-g0b7a7f5dd_1280.jpg';
 
-if (typeof window !== 'undefined') {
-    window.$ = window.jQuery = require('jquery');
-}
+// if (typeof window !== 'undefined') {
+//     window.$ = window.jQuery = require('jquery');
+// }
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import dynamic from 'next/dynamic';
@@ -18,7 +19,7 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
     ssr: false,
 });
 
-const options = {
+const options = { 
     loop: true,
     margin: 20,
     items: 3,

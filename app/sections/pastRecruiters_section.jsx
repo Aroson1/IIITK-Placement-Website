@@ -1,3 +1,4 @@
+import LogoGrid from '../components/LogoGrid';
 export default function PastRecruiters() {
     return (
         <div className="self-stretch bg-base-white overflow-hidden flex flex-row items-center justify-start  pb-[8.313rem] pr-[2.75rem] pl-[4.313rem] box-border gap-[0rem_1.75rem] max-w-full z-[4] text-left text-[4rem] text-forestgreen-100 font-footer-footer-sm lg:flex-wrap mq450:pt-[3.563rem] mq450:pb-[3.5rem] mq450:box-border mq750:pl-[2.125rem] mq750:pr-[1.375rem] mq750:box-border mq1050:pt-[5.5rem] mq1050:pb-[5.375rem] mq1050:box-border" id="PastRecruiters">
@@ -25,14 +26,10 @@ export default function PastRecruiters() {
                 <img
                     className="h-full w-full absolute !m-[0] top-[0rem] right-[0rem] bottom-[0rem] left-[0rem] max-w-full overflow-hidden max-h-full"
                     alt=""
-                    src="/frame-141.svg"
+                    src="/images/companies.svg"
                 />
-                <img
-                    className="h-[2.5rem] w-[6.188rem] relative object-contain z-[1]"
-                    loading="eager"
-                    alt=""
-                    src="/1200pxinfosys-logo-1@2x.png"
-                />
+                
+                {/* <LogoGrid /> */}
             </div>
         </div>
     );
