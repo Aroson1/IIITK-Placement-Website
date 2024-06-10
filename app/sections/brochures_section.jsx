@@ -7,6 +7,8 @@ import circle from "../../public/circle.png";
 import next from "../../public/next.svg";
 import prev from "../../public/prev.svg";
 import stats from "../../public/stats.svg";
+import { useMediaQuery } from "react-responsive";
+
 const renderBottomCenterControls = ({
   slideCount,
   nextSlide,
@@ -14,7 +16,14 @@ const renderBottomCenterControls = ({
   currentSlide,
   previousSlide,
 }) => (
-  <div className="bottom mr-14">
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "center", // Centers the children horizontally
+      alignItems: "center", // Centers the children vertically
+      height: "100%", // Adjust based on your needs
+    }}
+  >
     <button
       className="slider-control-button"
       onClick={previousSlide}
@@ -47,22 +56,23 @@ function Slider1() {
     "Year 2024-25",
     "Year 2025-26",
   ];
+  var isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
 
   return (
     <div
-      className="section p-[3%] "
-      style={{
-        marginRight: "100px",
-        width: "auto",
-        paddingLeft: "200px",
-      }}
+      className="section p-[3%] w-full mx-auto" // Added w-full and mx-auto for full width and horizontal centering
+      style={
+        {
+          // Other styles remain unchanged
+        }
+      }
       id="brochures"
     >
       <Carousel
         slidesToScroll={1}
-        slidesToShow={3}
+        slidesToShow={isSmallScreen ? 1 : 3}
         scrollMode="remainder"
-        cellSpacing={50}
+        cellSpacing={isSmallScreen ? "10" : "50"}
         disableEdgeSwiping={false}
         dragging={false}
         renderBottomCenterControls={renderBottomCenterControls}
@@ -71,11 +81,13 @@ function Slider1() {
         style={{
           paddingBottom: "40px",
           paddingTop: "40px",
+          textAlign: "center", // Center text inside carousel items
         }}
       >
         {colors.map((year) => (
           <div
-            className="color"
+            key={`&{year}}`}
+            className="color m-auto" // Added m-auto for automatic margin on all sides, centering the item
             style={{
               display: "flex",
               flexDirection: "column",
@@ -114,15 +126,16 @@ function Slider1() {
 
 export default function App() {
   return (
-    <div className="outersection mb-11 mt-16">
+    <div className="outersection mb-5 mt-5">
       <div
-        className="innersection flex-col items-center justify-center relative bg-green-700 p-[3%]"
+        className="innersection flex flex-col items-center justify-center relative bg-green-700 p-[3%] md:p-[4%] lg:p-[4%]"
         style={{
           backgroundColor: "rgba(249, 249, 255, 1)",
           zIndex: "1",
         }}
       >
         <div
+          className="text-center"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -131,11 +144,10 @@ export default function App() {
           }}
         >
           <span
+            className="text-5xl font-bold text-gray-800  md:text-3xl lg:text-5xl"
             style={{
               color: "rgba(26, 32, 44, 1)",
               fontFamily: "Inter",
-              fontSize: "35px",
-              fontWeight: "700",
             }}
           >
             Placement Statistics & Brochures
@@ -147,24 +159,14 @@ export default function App() {
       <Image
         src={circle}
         alt="circle"
-        style={{
-          position: "absolute",
-          top: "545px",
-          left: "10%",
-          transform: "translateX(-50%)",
-          zIndex: "-1",
-        }}
+        className="absolute top-[545px] left-[10%] translate-x-[-50%] z-[-1]"
+        style={{ zIndex: -1 }}
       />
       <Image
         src={circle}
         alt="circle"
-        style={{
-          position: "absolute",
-          top: "120px",
-          left: "40%",
-          transform: "translateX(-50%)",
-          zIndex: "-1",
-        }}
+        className="absolute top-[120px] left-[40%] translate-x-[-50%] z-[-1]"
+        style={{ zIndex: -1 }}
       />
     </div>
   );

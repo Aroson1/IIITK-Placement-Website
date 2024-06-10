@@ -1,0 +1,12 @@
+.carousel-control {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 780px) { /* Adjust breakpoint as needed */
+   .carousel-control {
+      @apply w-12 h-12; /* Smaller size for smaller screens */
+      position: absolute;
+      bottom: 0px; /* Position at the bottom */
+      transform: none!important; /* Remove rotation for smaller screens */
+    }
+  }

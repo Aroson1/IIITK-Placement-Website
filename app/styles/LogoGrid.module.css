@@ -1,63 +1,77 @@
-/* styles/LogoGrid.module.css */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  justify-items: center;
-  padding: 20px;
-  /* background-color: rgb(255, 217, 0); */
-  
-}
-
-.circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+.rfm-marquee-container {
+  overflow-x: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  background-color: rgb(218, 210, 167);
+  flex-direction: row;
   position: relative;
+  width: var(--width);
+  transform: var(--transform);
+}
+.rfm-marquee-container:hover div {
+  animation-play-state: var(--pause-on-hover);
+}
+.rfm-marquee-container:active div {
+  animation-play-state: var(--pause-on-click);
 }
 
-.circle img {
-  max-width: 80%;
-  max-height: 80%;
+.rfm-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-
-.circle:hover {
-  transform: scale(1.2);
-  z-index: 1;
-}
-
-.grid:hover .circle {
-  filter: blur(3px);
-}
-
-.grid .circle:hover {
-  filter: blur(0);
-}
-
-.hex {
-  display: inline-block;
-  margin: 2px;
-  position: relative;
-  /* background-color: rgb(255, 0, 0); */
-
-}
-
-.hex:before {
+.rfm-overlay::before,
+.rfm-overlay::after {
+  background: linear-gradient(
+    to right,
+    var(--gradient-color),
+    rgba(255, 255, 255, 0)
+  );
   content: "";
-  display: block;
-  /* padding-bottom: 86.6%; */
+  height: 100%;
+  position: absolute;
+  width: var(--gradient-width);
+  z-index: 2;
+  pointer-events: none;
+  touch-action: none;
+}
+.rfm-overlay::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.rfm-overlay::before {
+  left: 0;
+  top: 0;
 }
 
-.hex:nth-child(odd) {
-  margin-top: 20%;
+.rfm-marquee {
+  flex: 0 0 auto;
+  min-width: var(--min-width);
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
-.hex:nth-child(even) {
-  margin-bottom: 20%;
+.rfm-initial-child-container {
+  flex: 0 0 auto;
+  display: flex;
+  min-width: auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rfm-child {
+  transform: var(--transform);
 }

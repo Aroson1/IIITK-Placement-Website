@@ -1,6 +1,8 @@
+'use client';
 import Slider2 from "../components/Carousel";
-
+import { useMediaQuery } from "react-responsive";
 const People = () => {
+  let isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
   return (
     <div id="Students">
       <div className="flex flex-col ml-12 max-w-full text-4xl text-gray-900 leading-[55px] w-[357px] max-md:ml-2.5">
@@ -20,7 +22,7 @@ const People = () => {
       </div>
       {/** */}
 
-      <div className="p-10 ">
+      <div className={`${isSmallScreen ? "pb-10": "p-10"}`}>
         <Slider2 />
       </div>
     </div>

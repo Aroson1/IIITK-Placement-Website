@@ -8,6 +8,7 @@ import News from "./sections/news_section";
 import Highlights from "./sections/highlights_section";
 import PastRecruiters from "./sections/pastRecruiters_section";
 import Footer from "./components/footer";
+import LogoGrid from "./components/LogoGrid";
 
 export default function Home() {
   return (
@@ -17,9 +18,10 @@ export default function Home() {
       <Brochures />
       <About />
       <People />
-      <News />
+      {/* <News /> */}
       <Highlights />
       <PastRecruiters />
+      {/* <LogoGrid /> */}
       <Footer />
     </div>
   );
