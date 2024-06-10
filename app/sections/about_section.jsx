@@ -1,18 +1,22 @@
+"use client";
 import * as React from "react";
-import logo from "../../public/logok.svg";
+import logo from "../../public/aboutSideImage.svg";
 import Image from "next/image";
 import arrow from "../../public/stats.svg";
+import { useMediaQuery } from "react-responsive";
 
 export default function About() {
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
+
   return (
     <div
-      className="flex flex-col"
-      style={{ paddingLeft: "80px", paddingRight: "30px" }}
+      className={`flex flex-col ${isSmallScreen ? "px-0" : "px-5 md:px-8"} `}
       id="about"
+      
     >
       <div className="w-full max-md:max-w-full  mb-2">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
-          <div className="flex flex-col w-[65%] max-md:ml-0 max-md:w-full ">
+          <div className="flex flex-col max-md:ml-0 max-md:w-full ">
             <div className="max-md:mt-3 max-md:max-w-full">
               <div className="flex  max-md:flex-col max-md:gap-0 max-md:">
                 <div className="flex flex-col w-3/5 max-md:ml-0 max-md:w-full ">
@@ -66,24 +70,33 @@ export default function About() {
                     </div>
                   </div>
                 </div>
-                <div className="flex ml-5 w-2/5 max-md:ml-0 max-md:w-full items-center">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/d4c8d0f33427a0a0c531983c7445b3d61292b1fcd1fd9c0356cd1ce928a21d65?"
-                    className="w-full aspect-[1.72] fill-[linear-gradient(180deg,#58D162_0%,#2AA031_100%)]"
-                  />
-                </div>
+                {isSmallScreen ? (
+                  <div></div>
+                ) : (
+                  <div className="flex content-center items-right">
+                    <Image
+                      // loading="lazy"
+                      src={logo}
+                      // src="https://cdn.builder.io/api/v1/image/assets/TEMP/d4c8d0f33427a0a0c531983c7445b3d61292b1fcd1fd9c0356cd1ce928a21d65?"
+                      className="w-full"
+                    />
+                  </div>
+                )}
               </div>
             </div>
           </div>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "end",
-            }}
-          >
-            <Image src={logo} alt="logo" />
-          </div>
+          {/* {isSmallScreen ? (
+            <div></div>
+          ) : (
+            <div
+              style={{
+                display: "flex",
+                alignItems: "end",
+              }}
+            >
+              <Image src={logo} alt="logo" />
+            </div>
+          )} */}
         </div>
       </div>
 
@@ -101,7 +114,7 @@ export default function About() {
         </button>
       </div>
 
-      <div className="flex flex-col gap-2 mr-14">
+      <div className={`flex flex-col gap-2 ${isSmallScreen ? "mr-4" : "mr-14"}`}>
         <div className="flex gap-5 justify-between self-start px-5 text-4xl font-bold whitespace-nowrap leading-[54.95px]">
           <div
             className="h-[69px] w-[5px]"
@@ -123,7 +136,7 @@ export default function About() {
           </div>
         </div>
         <div
-          className="justify-center p-8 text-lg leading-9 rounded-3xl bg-slate-50 max-w-[964px]  max-md:px-5 ml-20"
+          className={`justify-center p-8 text-lg leading-9 rounded-3xl bg-slate-50 max-w-[964px]  max-md:px-5  ${isSmallScreen ? "ml-4" : "ml-20"}`}
           style={{
             color: "rgba(113, 128, 150, 1)",
 
@@ -139,7 +152,7 @@ export default function About() {
           and corporate firms to offer diverse career pathways for students.
         </div>
       </div>
-      <div className="flex flex-col  mr-14">
+      <div className={`flex flex-col mt-5 ${isSmallScreen ? "ml-4" : "ml-5"}`}>
         <div className="flex gap-4 self-end px-5 text-4xl font-bold whitespace-nowrap leading-[54.95px] mb-2">
           <div
             className="my-auto bg-clip-text"
@@ -161,7 +174,7 @@ export default function About() {
           />
         </div>
         <div
-          className="justify-center p-8 text-lg leading-9 rounded-3xl bg-slate-50 max-w-[964px]  max-md:px-5 self-end mr-20"
+          className={`justify-center p-8 text-lg leading-9 rounded-3xl bg-slate-50 max-w-[964px]  max-md:px-5 self-end  ${isSmallScreen ? "mr-4" : "mr-20"}`}
           style={{
             color: "rgba(113, 128, 150, 1)",
             boxShadow: "0px 5px 10px -5px rgba(0,0,0,0.75)",

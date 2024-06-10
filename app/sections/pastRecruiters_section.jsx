@@ -1,36 +1,76 @@
-import LogoGrid from '../components/LogoGrid';
+"use client";
+import * as React from "react";
+import logo from "../../public/images/companies.svg";
+import Image from "next/image";
+import arrow from "../../public/stats.svg";
+import { useMediaQuery } from "react-responsive";
+
 export default function PastRecruiters() {
-    return (
-        <div className="self-stretch bg-base-white overflow-hidden flex flex-row items-center justify-start  pb-[8.313rem] pr-[2.75rem] pl-[4.313rem] box-border gap-[0rem_1.75rem] max-w-full z-[4] text-left text-[4rem] text-forestgreen-100 font-footer-footer-sm lg:flex-wrap mq450:pt-[3.563rem] mq450:pb-[3.5rem] mq450:box-border mq750:pl-[2.125rem] mq750:pr-[1.375rem] mq750:box-border mq1050:pt-[5.5rem] mq1050:pb-[5.375rem] mq1050:box-border" id="PastRecruiters">
-            <div className="flex flex-col items-start justify-start pt-[1.438rem] px-[0rem] pb-[0rem] box-border min-w-[29.938rem] max-w-full lg:flex-1 mq750:min-w-full">
-                <div className="flex flex-col items-center justify-start gap-[2.438rem_0rem] mq750:gap-[2.438rem_0rem]">
-                    <div className="flex flex-col items-start justify-start gap-[1.5rem_0rem]">
-                        <div className="w-[4.313rem] h-[0.313rem] relative [background:linear-gradient(225deg,_#6ce777,_#168b1b)]" />
-                        <h1 className="m-0 relative text-inherit leading-[3.438rem] font-bold font-inherit text-transparent !bg-clip-text [background:linear-gradient(86.14deg,_#67e272,_#168b1b)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] mq450:text-[2.375rem] mq450:leading-[2.063rem] mq750:text-[3.188rem] mq750:leading-[2.75rem]">
-                            Past Recruiters
-                        </h1>
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
+
+  return (
+    <div
+      className={`flex flex-col pt-10 ${isSmallScreen ? "px-0" : "px-5 md:px-8"} `}
+      id="about"
+    >
+      <div className="w-full max-md:max-w-full">
+        <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
+          <div className="flex flex-col max-md:ml-0 max-md:w-full ">
+            <div className="max-md:mt-3 max-md:max-w-full">
+              <div className="flex  max-md:flex-col max-md:gap-0 max-md:">
+                <div className="flex flex-col w-3/5 max-md:ml-0 max-md:w-full ">
+                  <div className="flex flex-col grow px-5 mt-20 max-md:mt-10 max-md:max-w-full ">
+                    <div
+                      className="h-[5px] w-[69px] "
+                      style={{
+                        background:
+                          "linear-gradient(to right, rgba(103, 226, 114, 1), rgba(22, 139, 27, 1))",
+                      }}
+                    />
+                    <div className="mt-5 text-4xl font-bold  bg-clip-text leading-[55px] max-md:max-w-full mr-6">
+                      
+                      {"   "}
+                      <span>Past</span>
+                      <br />
+                      <span
+                        style={{
+                          background:
+                            "linear-gradient(to right, rgba(103, 226, 114, 1), rgba(22, 139, 27, 1))",
+                          WebkitBackgroundClip: "text",
+                          WebkitTextFillColor: "transparent",
+                        }}
+                      >
+                        Recruiters
+                      </span>
                     </div>
-                    <div className="flex flex-row items-start justify-start py-[0.625rem] pr-[0rem] pl-[0.313rem] gap-[0rem_0.938rem] text-[1.25rem]">
-                        <div className="relative leading-[1.563rem] font-medium mq450:text-[1rem] mq450:leading-[1.25rem]">
-                            More Information
-                        </div>
-                        <img
-                            className="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0"
-                            alt=""
-                            src="/arrowrightline.svg"
-                        />
-                    </div>
+                  </div>
                 </div>
+
+                <div className="flex content-center items-right">
+                  <Image
+                    // loading="lazy"
+                    src={logo}
+                    // src="https://cdn.builder.io/api/v1/image/assets/TEMP/d4c8d0f33427a0a0c531983c7445b3d61292b1fcd1fd9c0356cd1ce928a21d65?"
+                    className="w-full"
+                  />
+                </div>
+              </div>
             </div>
-            <div className="flex-1 flex flex-row items-start justify-start py-[15.813rem] px-[4.25rem] box-border relative min-w-[33.313rem] min-h-[35.938rem] max-w-full mq750:pt-[10.25rem] mq750:pb-[10.25rem] mq750:box-border mq750:min-w-full">
-                <img
-                    className="h-full w-full absolute !m-[0] top-[0rem] right-[0rem] bottom-[0rem] left-[0rem] max-w-full overflow-hidden max-h-full"
-                    alt=""
-                    src="/images/companies.svg"
-                />
-                
-                {/* <LogoGrid /> */}
-            </div>
+          </div>
+          {/* {isSmallScreen ? (
+              <div></div>
+            ) : (
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "end",
+                }}
+              >
+                <Image src={logo} alt="logo" />
+              </div>
+            )} */}
         </div>
-    );
+      </div>
+    </div>
+  );
 }
