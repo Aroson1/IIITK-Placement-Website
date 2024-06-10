@@ -17,6 +17,7 @@
     "nuka-carousel": "^7.0.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-multistep": "^5.5.9",
     "react-owl-carousel": "^2.3.3",
     "react-responsive": "^10.0.0",
     "react-slick": "^0.30.2",
