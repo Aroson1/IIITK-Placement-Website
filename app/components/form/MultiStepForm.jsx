@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import Step1 from "./Step1";
-import Step2 from "./Step2";
-import Step3 from "./Step3";
+import Step1 from "./step1";
+import Step2 from "./step2";
+import Step3 from "./step3";
 import StepIndicator from "./StepIndicator";
 import "./MultiStepForm.css";
 
