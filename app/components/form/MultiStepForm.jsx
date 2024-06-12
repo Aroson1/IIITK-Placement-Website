@@ -45,7 +45,6 @@ const MultiStepForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (currentStep === steps.length - 1) {
-      console.log(formData);
       alert("Form submitted" + JSON.stringify(formData));
       setFormData({
         companyName: "",
