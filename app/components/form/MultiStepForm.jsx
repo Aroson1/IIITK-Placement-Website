@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import Stepper from "./Stepper";
 import FormInput from "../FormInput";
@@ -7,13 +6,12 @@ import FormSelector from "../FormSelector";
 
 const Form = () => {
   const [currentStep, setCurrentStep] = useState(0);
-
   const steps = ["Step 1", "Step 2", "Step 3", "Step 4"];
+  let [count, setCount] = useState(1);
 
   const nextStep = () => {
     setCurrentStep((prev) => Math.min(prev + 1, steps.length - 1));
   };
-
   const prevStep = () => {
     setCurrentStep((prev) => Math.max(prev - 1, 0));
   };
@@ -26,6 +24,11 @@ const Form = () => {
       nextStep();
     }
   };
+
+  const addJob = () => {
+    setCount(count++)
+    console.log(count);
+  }
 
   return (
     <div className="mx-auto max-w-[700px]">
@@ -80,16 +83,24 @@ const Form = () => {
             <div className="mt-2 w-full text-lg leading-8 text-slate-500 max-md:max-w-full">
               Lorem ipsum dolor sit amet consectetur adipisc.
             </div>
-            <div className="flex gap-5 mt-5 whitespace-nowrap text-slate-500 max-md:flex-wrap">
-              <FormInput label={"Job Title"} placeholder={"SDE"} />
-              <FormSelector
-                label={"Type of offer"}
-                placeholder={"Select type"}
-                options={["Full-Time", "Partime", "Probationary", "Internship"]}
-              />
-              <FormInput label={"Job Description"} placeholder={"Decritpion"} />
-            </div>
-            <div className="px-3 py-4 mt-8 text-center text-green-600 border border-green-500 rounded-[66px] cursor-pointer">
+            {Array.from({ length: count }).map((_, index) => (
+              <div
+                key={index}
+                className="flex gap-5 mt-5 whitespace-nowrap text-slate-500 max-md:flex-wrap"
+              >
+                <FormInput label={"Job Title"} placeholder={"SDE"} />
+                <FormSelector
+                  label={"Type of offer"}
+                  placeholder={"Select type"}
+                  options={["Full-Time", "Partime", "Probationary", "Internship"]}
+                />
+                <FormInput label={"Job Description"} placeholder={"Decritpion"} />
+              </div>
+            ))}
+            <div
+              className="px-3 py-4 mt-8 text-center text-green-600 border border-green-500 rounded-[66px] cursor-pointer"
+              onClick={addJob}
+            >
               Add New Job
             </div>
           </div>
