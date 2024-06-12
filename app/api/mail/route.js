@@ -9,8 +9,8 @@ export async function POST(request) {
     const { formData } = await request.json();
  
     const { data, error } = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>',
-      to: ['mramki1803@gmail.com'],
+      from: 'Students Placements Commitee IIITK <onboarding@resend.dev>',
+      to: ['xyz@iiitkottayam.ac.in'],
       subject: 'Hello world',
       react: <EmailTemplate formData={formData} />,
     });
