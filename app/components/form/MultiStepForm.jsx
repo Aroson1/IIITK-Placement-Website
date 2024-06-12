@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Stepper from "./Stepper";
-import FormInput from "../FormInput";
-import FormSelector from "../FormSelector";
+import FormInput from "./FormInput";
+import FormSelector from "./FormSelector";
 
 const MultiStepForm = () => {
   const [currentStep, setCurrentStep] = useState(0);

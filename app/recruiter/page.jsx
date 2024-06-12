@@ -83,7 +83,7 @@ function Page() {
         </div>
         <MultiStepForm />
         <section className="flex flex-col px-12 mt-20 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full">
-          <p className="text-lg leading-10 text-slate-500 max-md:max-w-full">
+          <div className="text-lg leading-10 text-slate-500 max-md:max-w-full">
             <strong className="font-black text-green-600">
               Kindly read the following terms and conditions before proceeding:
             </strong>
@@ -141,7 +141,7 @@ function Page() {
               and are included as a mandatory part in the undergraduate
               curriculum.
             </span>
-          </p>
+          </div>
           <div className="flex flex-col justify-center mt-20">
             <div
               className="h-[5px] w-[69px] mt-3  self-center"
