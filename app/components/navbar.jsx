@@ -1,4 +1,4 @@
-import * as React from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -7,9 +7,17 @@ export default function Navbar() {
         SPC | <span>IIITK</span>
       </div>
       <div className="flex gap-12 justify-between self-stretch py-2.5 text-base font-medium leading-6 text-slate-600 max-md:flex-wrap max-md:max-w-full">
-        <div className="cursor-pointer grow">Home</div>
+        <div className="flex-auto cursor-pointer">
+          <Link href="/" className="text-inherit no-underline">
+            <div>Home</div>
+          </Link>
+        </div>
         <div className="cursor-pointer">For Students</div>
-        <div className="flex-auto cursor-pointer">For Recruiters</div>
+        <div className="flex-auto cursor-pointer">
+          <Link href="/recruiter" className="text-inherit no-underline">
+            <div>For Recruiters</div>
+          </Link>
+        </div>
         <div className="cursor-pointer">About IIITK</div>
         <div className="cursor-pointer grow whitespace-nowrap">Contact Us</div>
       </div>

@@ -4,31 +4,70 @@ import Stepper from "./Stepper";
 import FormInput from "../FormInput";
 import FormSelector from "../FormSelector";
 
-const Form = () => {
+const MultiStepForm = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const steps = ["Step 1", "Step 2", "Step 3", "Step 4"];
-  let [count, setCount] = useState(1);
+  const [count, setCount] = useState(1);
 
   const nextStep = () => {
     setCurrentStep((prev) => Math.min(prev + 1, steps.length - 1));
   };
+
   const prevStep = () => {
     setCurrentStep((prev) => Math.max(prev - 1, 0));
+  };
+
+  const [formData, setFormData] = useState({
+    companyName: "",
+    typeOfOrganisation: "",
+    aboutCompany: "",
+    name: "",
+    email: "",
+    phoneNumber: "",
+    company: "",
+    jobs: [{ jobTitle: "", typeOfOffer: "", jobDescription: "" }]
+  });
+
+  const handleChange = (field, value) => {
+    setFormData({
+      ...formData,
+      [field]: value,
+    });
+  };
+
+  const handleJobChange = (index, field, value) => {
+    const newJobs = formData.jobs.map((job, i) => 
+      i === index ? { ...job, [field]: value } : job
+    );
+    setFormData({ ...formData, jobs: newJobs });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (currentStep === steps.length - 1) {
-      alert("Form submitted");
+      console.log(formData);
+      alert("Form submitted" + JSON.stringify(formData));
+      setFormData({
+        companyName: "",
+        typeOfOrganisation: "",
+        aboutCompany: "",
+        name: "",
+        email: "",
+        phoneNumber: "",
+        company: "",
+        jobs: [{ jobTitle: "", typeOfOffer: "", jobDescription: "" }]
+      })
     } else {
       nextStep();
     }
   };
 
   const addJob = () => {
-    setCount(count++)
-    console.log(count);
-  }
+    setFormData({
+      ...formData,
+      jobs: [...formData.jobs, { jobTitle: "", typeOfOffer: "", jobDescription: "" }]
+    });
+  };
 
   return (
     <div className="mx-auto max-w-[700px]">
@@ -43,13 +82,25 @@ const Form = () => {
               Lorem ipsum dolor sit amet consectetur adipisc.
             </div>
             <div className="flex gap-5 mt-5 whitespace-nowrap text-slate-500 max-md:flex-wrap">
-              <FormInput label={"Company Name"} placeholder={"Google"} />
-              <FormInput label={"Type of Organisation"} placeholder={"MNC"} />
+              <FormInput
+                label="Company Name"
+                placeholder="Google"
+                value={formData.companyName}
+                onChange={(value) => handleChange("companyName", value)}
+              />
+              <FormInput
+                label="Type of Organisation"
+                placeholder="MNC"
+                value={formData.typeOfOrganisation}
+                onChange={(value) => handleChange("typeOfOrganisation", value)}
+              />
             </div>
             <div className="flex gap-5 mt-4 whitespace-nowrap text-slate-500 max-md:flex-wrap">
               <FormInput
-                label={"About the company"}
-                placeholder={"Decription"}
+                label="About the company"
+                placeholder="Description"
+                value={formData.aboutCompany}
+                onChange={(value) => handleChange("aboutCompany", value)}
               />
             </div>
           </div>
@@ -63,15 +114,32 @@ const Form = () => {
               Lorem ipsum dolor sit amet consectetur adipisc.
             </div>
             <div className="flex gap-5 mt-5 whitespace-nowrap text-slate-500 max-md:flex-wrap">
-              <FormInput label={"Name"} placeholder={"John Carter"} />
-              <FormInput label={"Email"} placeholder={"Email address"} />
+              <FormInput
+                label="Name"
+                placeholder="John Carter"
+                value={formData.name}
+                onChange={(value) => handleChange("name", value)}
+              />
+              <FormInput
+                label="Email"
+                placeholder="Email address"
+                value={formData.email}
+                onChange={(value) => handleChange("email", value)}
+              />
             </div>
             <div className="flex gap-5 mt-4 whitespace-nowrap text-slate-500 max-md:flex-wrap">
               <FormInput
-                label={"Phone Number"}
-                placeholder={"(123) 456 - 7890"}
+                label="Phone Number"
+                placeholder="(123) 456 - 7890"
+                value={formData.phoneNumber}
+                onChange={(value) => handleChange("phoneNumber", value)}
               />
-              <FormInput label={"Company"} placeholder={"Company name"} />
+              <FormInput
+                label="Company"
+                placeholder="Company name"
+                value={formData.company}
+                onChange={(value) => handleChange("company", value)}
+              />
             </div>
           </div>
         )}
@@ -83,18 +151,30 @@ const Form = () => {
             <div className="mt-2 w-full text-lg leading-8 text-slate-500 max-md:max-w-full">
               Lorem ipsum dolor sit amet consectetur adipisc.
             </div>
-            {Array.from({ length: count }).map((_, index) => (
+            {formData.jobs.map((job, index) => (
               <div
                 key={index}
                 className="flex gap-5 mt-5 whitespace-nowrap text-slate-500 max-md:flex-wrap"
               >
-                <FormInput label={"Job Title"} placeholder={"SDE"} />
-                <FormSelector
-                  label={"Type of offer"}
-                  placeholder={"Select type"}
-                  options={["Full-Time", "Partime", "Probationary", "Internship"]}
+                <FormInput
+                  label="Job Title"
+                  placeholder="SDE"
+                  value={job.jobTitle}
+                  onChange={(value) => handleJobChange(index, "jobTitle", value)}
                 />
-                <FormInput label={"Job Description"} placeholder={"Decritpion"} />
+                <FormSelector
+                  label="Type of offer"
+                  placeholder="Select type"
+                  options={["Full-Time", "Part-time", "Probationary", "Internship"]}
+                  value={job.typeOfOffer}
+                  onChange={(value) => handleJobChange(index, "typeOfOffer", value)}
+                />
+                <FormInput
+                  label="Job Description"
+                  placeholder="Description"
+                  value={job.jobDescription}
+                  onChange={(value) => handleJobChange(index, "jobDescription", value)}
+                />
               </div>
             ))}
             <div
@@ -127,4 +207,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default MultiStepForm;
