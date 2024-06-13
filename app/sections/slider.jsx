@@ -2,8 +2,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import sea from "../../public/images/sea-g879f4f00d_1280.jpg";
-import woman from "../../public/images/woman-g0b7a7f5dd_1280.jpg";
+import sea from "../../public/images/placeholder-1.jpg";
 
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -19,7 +18,7 @@ const options = {
   loop: true,
   margin: 20,
   items: 3,
-  // autoplay: true,
+  autoplay: true,
   responsiveClass: true,
   nav: true,
   responsive: {

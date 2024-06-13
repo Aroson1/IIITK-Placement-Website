@@ -49,12 +49,10 @@ const renderCenterLeftControls = ({}) => <div></div>;
 
 function Slider1() {
   const colors = [
-    "Year 2020-21",
-    "Year 2021-22",
-    "Year 2022-23",
-    "Year 2023-24",
-    "Year 2024-25",
-    "Year 2025-26",
+    { year: "Year 2020-21", pdf: "./brochures/Placement Brochure'23.pdf" },
+    { year: "Year 2021-22", pdf: "./brochures/Placement Brochure'23.pdf" },
+    { year: "Year 2022-23", pdf: "./brochures/Placement Brochure'23.pdf" },
+    { year: "Year 2023-24", pdf: "./brochures/Placement Brochure'23.pdf" },
   ];
   var isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
 
@@ -84,9 +82,9 @@ function Slider1() {
           textAlign: "center", // Center text inside carousel items
         }}
       >
-        {colors.map((year) => (
+        {colors.map((ele) => (
           <div
-            key={`&{year}}`}
+            key={`${ele.year}`}
             className="color m-auto" // Added m-auto for automatic margin on all sides, centering the item
             style={{
               display: "flex",
@@ -107,14 +105,13 @@ function Slider1() {
               style={{
                 fontSize: "16px",
               }}
-            >{`${year}`}</span>
+            >{`${ele.year}`}</span>
             <button>
               <Image
                 src={stats}
                 alt="stats"
-                style={{
-                  cursor: "pointer",
-                }}
+                style={{ cursor: "pointer" }}
+                onClick={() => window.open(ele.pdf, "_blank")}
               />
             </button>
           </div>
