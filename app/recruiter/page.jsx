@@ -12,7 +12,12 @@ function TopicCard({ title, content }) {
       <h3 className="self-center text-4xl tracking-tighter leading-[60.12px] text-sky-950">
         {title}
       </h3>
-      <p className="mt-16 text-base tracking-tighter leading-7 text-slate-900 max-md:mt-10">
+      <p
+        style={{
+          fontFamily: "Inter",
+        }}
+        className="mt-16 text-base tracking-tighter leading-7 text-slate-900 max-md:mt-10"
+      >
         {content}
       </p>
     </div>
@@ -30,7 +35,12 @@ function Page() {
             <div className="flex gap-5 max-md:flex-col max-md:gap-0">
               <div className="flex flex-col w-[39%] max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col self-stretch my-auto max-md:mt-10 max-md:max-w-full">
-                  <h1 className="text-5xl font-extrabold text-gray-900 bg-clip-text leading-[71px] max-md:max-w-full max-md:text-4xl max-md:leading-[59px]">
+                  <h1
+                    style={{
+                      fontFamily: "Inter",
+                    }}
+                    className="text-5xl font-extrabold text-gray-900 bg-clip-text leading-[71px] max-md:max-w-full max-md:text-4xl max-md:leading-[59px]"
+                  >
                     FOR{" "}
                     <span
                       style={{
@@ -38,6 +48,7 @@ function Page() {
                           "linear-gradient(to right, rgba(103, 226, 114, 1), rgba(22, 139, 27, 1))",
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
+                        fontFamily: "Inter",
                       }}
                       className="text-5xl font-extrabold bg-clip-text leading-[71px] max-md:max-w-full max-md:text-4xl max-md:leading-[59px]"
                     >
@@ -45,7 +56,12 @@ function Page() {
                     </span>
                     ECRUITERS
                   </h1>
-                  <p className="mt-7 text-lg leading-9 text-slate-600 max-md:max-w-full">
+                  <p
+                    style={{
+                      fontFamily: "Inter",
+                    }}
+                    className="mt-7 text-lg leading-9 text-slate-600 max-md:max-w-full"
+                  >
                     Indian Institute of Information Technology Kottayam.
                     <br />
                     An Institute of National Importance.
