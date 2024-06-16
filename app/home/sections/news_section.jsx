@@ -1,5 +1,5 @@
 import React from "react";
-import photo from "../../public/Photo.png";
+import photo from "../../../public/Photo.png";
 
 const News = () => {
   return (

@@ -1,5 +1,5 @@
 import * as React from "react";
-import heroimage from "../../public/college.jpeg";
+import heroimage from "../../../public/college.jpeg";
 import Image from "next/image";
 
 export default function Hero() {

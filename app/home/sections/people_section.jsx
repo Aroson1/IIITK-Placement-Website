@@ -1,5 +1,5 @@
 'use client';
-import Slider2 from "../components/Carousel";
+import Slider2 from "../../components/Carousel";
 import { useMediaQuery } from "react-responsive";
 const People = () => {
   let isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });

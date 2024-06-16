@@ -2,13 +2,13 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import sea from "../../public/images/placeholder-1.jpg";
+import sea from "../../../public/images/placeholder-1.jpg";
 
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import "../styles/studentCards.css";
-import "../styles/swiper-bundle.min.css";
-import "../styles/students.scss";
+import "../../styles/studentCards.css";
+import "../../styles/swiper-bundle.min.css";
+import "../../styles/students.scss";
 
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
   ssr: false,

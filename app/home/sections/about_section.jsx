@@ -1,8 +1,8 @@
 "use client";
 import * as React from "react";
-import logo from "../../public/aboutSideImage.svg";
+import logo from "../../../public/aboutSideImage.svg";
 import Image from "next/image";
-import arrow from "../../public/stats.svg";
+import arrow from "../../../public/stats.svg";
 import { useMediaQuery } from "react-responsive";
 
 export default function About() {
