@@ -2,7 +2,6 @@ import Image from "next/image";
 import NavBar from "../components/navbar";
 import Hero from "./sections/hero_section";
 import Brochures from "./sections/brochures_section";
-import About from "./sections/about_section";
 import People from "./sections/people_section";
 import News from "./sections/news_section";
 import Highlights from "./sections/highlights_section";
@@ -16,7 +15,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <Brochures />
-      <About />
+      {/* <About /> */}
       <People />
       {/* <News /> */}
       <Highlights />

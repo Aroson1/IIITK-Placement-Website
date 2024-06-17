@@ -10,7 +10,7 @@ export async function POST(request) {
  
     const { data, error } = await resend.emails.send({
       from: 'Students Placements Commitee IIITK <onboarding@resend.dev>',
-      to: ['xyz@iiitkottayam.ac.in'],
+      to: ['alexgijo02xc@gmail.com'],
       subject: 'Hello world',
       react: <EmailTemplate formData={formData} />,
     });

@@ -145,6 +145,10 @@ export default function App() {
             style={{
               color: "rgba(26, 32, 44, 1)",
               fontFamily: "Inter",
+              background:
+                "linear-gradient(to right, rgba(103, 226, 114, 1), rgba(22, 139, 27, 1))",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
             }}
           >
             Placement Statistics & Brochures
@@ -156,14 +160,14 @@ export default function App() {
       <Image
         src={circle}
         alt="circle"
-        className="absolute top-[545px] left-[10%] translate-x-[-50%] z-[-1]"
-        style={{ zIndex: -1 }}
+        className="absolute top-[545px] left-[10%] translate-x-[-50%] "
+        style={{ zIndex: -10 }}
       />
       <Image
         src={circle}
         alt="circle"
-        className="absolute top-[120px] left-[40%] translate-x-[-50%] z-[-1]"
-        style={{ zIndex: -1 }}
+        className="absolute top-[120px] left-[40%] translate-x-[-50%] "
+        style={{ zIndex: -10 }}
       />
     </div>
   );

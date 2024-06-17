@@ -2,7 +2,7 @@ import React from "react";
 
 const Stepper = ({ steps, currentStep }) => {
   return (
-    <div className="flex gap-14 items-start px-16 mb-4 max-w-[539px] max-md:flex-wrap">
+    <div className="flex gap-14 max-md:gap-2 items-start px-16 mb-4 max-w-[539px] max-md:flex-wrap">
       {steps.map((step, index) => (
         <React.Fragment key={index}>
           <div

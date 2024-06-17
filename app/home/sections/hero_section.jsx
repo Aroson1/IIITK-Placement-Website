@@ -6,8 +6,8 @@ export default function Hero() {
   return (
     <div className="flex w-screen justify-center" id="hero">
       <div className="flex justify-center w-3/4 items-start px-11 py-12 shadow-2xl max-md:px-5">
-        <div className="flex flex-col">
-          <div className="pl-11 pt-14  mt-8 text-5xl font-extrabold text-gray-900 bg-clip-text leading-[71px] max-md:text-4xl max-md:leading-[59px]">
+        <div className="flex flex-col ">
+          <div className="pt-14 pl-11 mt-8 mr-8 text-5xl font-extrabold text-gray-900 bg-clip-text leading-[71px] max-md:text-4xl max-md:leading-[59px]">
             <span className="text-5xl font-light">Welcome to IIITK </span>
             <br />
             <span
