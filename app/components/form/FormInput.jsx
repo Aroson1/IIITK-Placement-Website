@@ -2,7 +2,7 @@ import React from 'react';
 
 const FormInput = ({ label, placeholder, value, onChange }) => {
   return (
-    <div>
+    <div style={{width:'100%'}}>
       <div className="block mb-3 font-medium max-md:flex-wrap max-md:mt-10 max-md:max-w-full text-black">
         {label}
       </div>
@@ -13,7 +13,8 @@ const FormInput = ({ label, placeholder, value, onChange }) => {
         id={placeholder}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-      />
+        style={{width:'100%'}}       
+      />       
     </div>
   );
 };
