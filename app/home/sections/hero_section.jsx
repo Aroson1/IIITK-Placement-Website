@@ -33,7 +33,7 @@ export default function Hero() {
             >
               C
             </span>
-            OMMITEE
+            OMMITTEE
             <div
               style={{
                 background:
