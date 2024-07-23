@@ -26,10 +26,7 @@ const renderCenterRightControls = ({
   slidesToShow,
 }) => {
   return (
-    <button
-      onClick={nextSlide}
-      className="carousel-control"
-    >
+    <button onClick={nextSlide} className="carousel-control">
       <Image
         src={btnleft}
         alt="right-button"
@@ -46,9 +43,9 @@ export const CustomDots = () => {
 
   const className = (index) => {
     let value =
-      'w-3 h-3 p-0 rounded-full bg-green-200 border-none cursor-pointer hover:bg-green-200';
+      "w-3 h-3 p-0 rounded-full bg-green-200 border-none cursor-pointer hover:bg-green-200";
     if (currentPage === index) {
-      value += 'bg-green-500 hover:bg-green-500';
+      value += "bg-green-500 hover:bg-green-500";
     }
     return value;
   };
@@ -87,7 +84,7 @@ export default function Slider2() {
             <div>
               <div
                 className={`flex flex-wrap gap-1 justify-between mt-0 w-full max-md:flex-wrap max-md:mt-10 ${
-                  isSmallScreen? "" : " px-5"
+                  isSmallScreen ? "" : " px-5"
                 }`}
               >
                 <div className="max-md:max-w-full flex gap-5 max-md:flex-col max-md:gap-0">
@@ -153,7 +150,7 @@ export default function Slider2() {
                   </div>
                   <div
                     className={`flex justify-center flex-col w-[63%] max-md:ml-0 max-md:w-full ${
-                      isSmallScreen? "ml-0" : "ml5"
+                      isSmallScreen ? "ml-0" : "ml5"
                     }`}
                   >
                     <div className="flex">

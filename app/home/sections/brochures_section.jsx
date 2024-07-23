@@ -141,7 +141,7 @@ export default function App() {
           }}
         >
           <span
-            className="text-5xl font-bold text-gray-800  md:text-3xl lg:text-5xl"
+            className="lg:text-4xl font-bold text-gray-800  md:text-2xl text-2xl"
             style={{
               color: "rgba(26, 32, 44, 1)",
               fontFamily: "Inter",
@@ -157,18 +157,6 @@ export default function App() {
 
         <Slider1 />
       </div>
-      <Image
-        src={circle}
-        alt="circle"
-        className="absolute top-[545px] left-[10%] translate-x-[-50%] "
-        style={{ zIndex: -10 }}
-      />
-      <Image
-        src={circle}
-        alt="circle"
-        className="absolute top-[120px] left-[40%] translate-x-[-50%] "
-        style={{ zIndex: -10 }}
-      />
     </div>
   );
 }

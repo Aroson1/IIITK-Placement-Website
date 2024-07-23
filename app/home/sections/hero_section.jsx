@@ -5,14 +5,14 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="flex w-screen justify-center" id="hero">
-      <div className="flex justify-center w-3/4 items-start px-11 py-12 shadow-2xl max-md:px-5">
+      <div className="flex justify-center w-3/4 items-start px-11 py-12 shadow-2xl max-md:px-5 max-lg:flex-wrap-reverse">
         <div className="flex flex-col ">
           <div className="pt-14 pl-11 mt-8 mr-8 text-5xl font-extrabold text-gray-900 bg-clip-text leading-[71px] max-md:text-4xl max-md:leading-[59px]">
             <span className="text-5xl font-light">Welcome to IIITK </span>
             <br />
             <span
               style={{
-                color: "#0B7F0F",
+                color: "#66E071",
               }}
             >
               S
@@ -45,7 +45,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="max-w-[60%]">
+        <div className="max-w-[100%]">
           <Image
             src={heroimage}
             alt="hero-image"
