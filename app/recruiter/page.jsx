@@ -1,15 +1,13 @@
 import * as React from "react";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
-
-import timeline from "../../public/Timeline.png";
 import Image from "next/image";
 import MultiStepForm from "../components/form/MultiStepForm";
 import arrow from "../../public/stats.svg";
 
 function Hero() {
   return (
-    <section className="mb-20 pt-10">
+    <section className="mb-20 pt-20 px-3">
       <div className="justify-center py-10 pl-11 w-full shadow-sm max-md:pl-5 max-md:max-w-full b">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
           <div className="flex flex-col w-[39%] max-md:ml-0 max-md:w-full">
@@ -52,7 +50,7 @@ function Hero() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-[61%] max-md:ml-0 max-md:w-full">
+          <div className="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/4d8d66912cba529bb5bce0a7b221223a4bad86676e548a6581a4db9d2dd254f9?apiKey=54911849f61d4333a39b368307a01ae9&"
@@ -173,91 +171,203 @@ function Page() {
       <Form />
       <TandC />
       <div
-        className="flex justify-center"
+        className="flex justify-center flex-col items-center mt-10 mb-10 px-4"
         style={{ background: "linear-gradient(to bottom, #0077B6, #0096C7)" }}
       >
-        <ol class="items-center sm:flex">
+        <span
+          className="font-bold text-3xl text-white mt-10"
+          style={{
+            fontFamily: "Inter",
+          }}
+        >
+          Recruitment Process
+        </span>
+
+        <ol class="items-center lg:flex mt-10">
           <li class="relative mb-6 sm:mb-0">
             <div class="flex items-center">
               <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                <svg
-                  class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                </svg>
+                <span className="font-bold text-white">1</span>
               </div>
               <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
             </div>
-            <div class="mt-3 sm:pe-8">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                Flowbite Library v1.0.0
-              </h3>
-              <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                Released on December 2, 2021
-              </time>
+            <div class="mt-3 sm:pe-8 bg-white shadow-md rounded-xl p-4 w-[95%]">
               <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-                Get started with dozens of web components and interactive
-                elements.
+                Recruiters interested should drop a mail at
+                placementcoordinator@iiitkottayam.ac.in
               </p>
             </div>
           </li>
           <li class="relative mb-6 sm:mb-0">
             <div class="flex items-center">
               <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                <svg
-                  class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                </svg>
+                <span className="font-bold text-white">2</span>
               </div>
               <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
             </div>
-            <div class="mt-3 sm:pe-8">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                Flowbite Library v1.2.0
-              </h3>
-              <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                Released on December 23, 2021
-              </time>
+            <div class="mt-3 sm:pe-8 bg-white shadow-md rounded-xl p-4 w-[95%]">
               <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-                Get started with dozens of web components and interactive
-                elements.
+                The placement Office appoints a point of contact for you and
+                sends invitations to recruiting Organisations.
               </p>
             </div>
           </li>
           <li class="relative mb-6 sm:mb-0">
             <div class="flex items-center">
               <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                <svg
-                  class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                </svg>
+                <span className="font-bold text-white">3</span>
               </div>
               <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
             </div>
-            <div class="mt-3 sm:pe-8">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                Flowbite Library v1.3.0
-              </h3>
-              <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                Released on January 5, 2022
-              </time>
+            <div class="mt-3 sm:pe-8 bg-white shadow-md rounded-xl p-4 w-[95%]">
               <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-                Get started with dozens of web components and interactive
-                elements.
+                After successful verification the job is made available online
+                to the students as per dates decided by the Placement Office.
+              </p>
+            </div>
+          </li>
+          <li class="relative mb-6 sm:mb-0">
+            <div class="flex items-center">
+              <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <span className="font-bold text-white">4</span>
+              </div>
+              <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+            </div>
+            <div class="mt-3 sm:pe-8 bg-white shadow-md rounded-xl p-4 w-[95%]">
+              <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                The details of the hob are verified by the executive officers.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <ol class="items-center lg:flex mt-10">
+          <li class="relative mb-6 sm:mb-0">
+            <div class="flex items-center">
+              <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <span className="font-bold text-white">5</span>
+              </div>
+              <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+            </div>
+            <div class="mt-3 sm:pe-8 bg-white shadow-md rounded-xl p-4 w-[95%]">
+              <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                Interested students show their willingness to appear for the
+                recruitement process of a company by applying for its job.
+              </p>
+            </div>
+          </li>
+          <li class="relative mb-6 sm:mb-0">
+            <div class="flex items-center">
+              <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <span className="font-bold text-white">6</span>
+              </div>
+              <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+            </div>
+            <div class="mt-3 sm:pe-8 bg-white shadow-md rounded-xl p-4 w-[95%]">
+              <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                Companies can view resumes of interested students and shortlist
+                using their online account.
+              </p>
+            </div>
+          </li>
+          <li class="relative mb-6 sm:mb-0">
+            <div class="flex items-center">
+              <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <span className="font-bold text-white">7</span>
+              </div>
+              <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+            </div>
+            <div class="mt-3 sm:pe-8 bg-white shadow-md rounded-xl p-4 w-[95%]">
+              <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                Companies can proceed with their tests/screeening process after
+                finalizing the schedule in coordinance with Placement Office.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <ol class="items-center lg:flex mt-4">
+          <li class="relative mb-6 sm:mb-0">
+            <div class="flex items-center">
+              <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <span className="font-bold text-white">8</span>
+              </div>
+              <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+            </div>
+            <div class="mt-3 sm:pe-8 bg-white shadow-md rounded-xl p-4 w-[95%]">
+              <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                Companies shortlist the selected students for final interview
+                process.
+              </p>
+            </div>
+          </li>
+          <li class="relative mb-6 sm:mb-0">
+            <div class="flex items-center">
+              <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <span className="font-bold text-white">9</span>
+              </div>
+              <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+            </div>
+            <div class="mt-3 sm:pe-8 bg-white shadow-md rounded-xl p-4 w-[95%]">
+              <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                Placement Office allots dates to organizations for campus
+                interview based on various details given by companies.
+              </p>
+            </div>
+          </li>
+          <li class="relative mb-6 sm:mb-0">
+            <div class="flex items-center">
+              <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <span className="font-bold text-white">10</span>
+              </div>
+              <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+            </div>
+            <div class="mt-3 sm:pe-8 bg-white shadow-md rounded-xl p-4 w-[95%]">
+              <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                The organization confirms the dates wiht the placement office.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <ol class="items-center lg:flex mt-4">
+          <li class="relative mb-6 sm:mb-0">
+            <div class="flex items-center">
+              <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <span className="font-bold text-white">11</span>
+              </div>
+              <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+            </div>
+            <div class="mt-3 sm:pe-8 bg-white shadow-md rounded-xl p-4 w-[95%]">
+              <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                Orgainzations provide the list of students they are extending
+                offers to at the end of their interview slot.
+              </p>
+            </div>
+          </li>
+          <li class="relative mb-6 sm:mb-0">
+            <div class="flex items-center">
+              <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <span className="font-bold text-white">12</span>
+              </div>
+              <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+            </div>
+            <div class="mt-3 sm:pe-8 bg-white shadow-md rounded-xl p-4 w-[95%] ">
+              <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                Placement Office notifies and organization with the aceptance of
+                the selected students.
+              </p>
+            </div>
+          </li>
+          <li class="relative mb-6 sm:mb-0">
+            <div class="flex items-center">
+              <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <span className="font-bold text-white">13</span>
+              </div>
+              <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+            </div>
+            <div class="mt-3 sm:pe-8 bg-white shadow-md rounded-xl p-4 w-[95%]">
+              <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                Organization generate and deliver the offer letter to the
+                selected candidates consistent with the information of the job
+                created online.
               </p>
             </div>
           </li>
