@@ -8,7 +8,7 @@ import next from "../../../public/next.svg";
 import prev from "../../../public/prev.svg";
 import stats from "../../../public/stats.svg";
 import { useMediaQuery } from "react-responsive";
-
+import StatisticsDisplay from "./stats";
 const renderBottomCenterControls = ({
   slideCount,
   nextSlide,
@@ -58,10 +58,10 @@ function Slider1() {
 
   return (
     <div
-      className="section w-full mx-auto" // Added w-full and mx-auto for full width and horizontal centering
+      className="section w-full mx-auto" 
       style={
         {
-          // Other styles remain unchanged
+         
         }
       }
       id="brochures"
@@ -82,7 +82,6 @@ function Slider1() {
         renderCenterRightControls={null}
         renderCenterLeftControls={null}
         style={{
-          paddingBottom: "40px",
           paddingTop: "40px",
           textAlign: "center", // Center text inside carousel items
         }}
@@ -161,6 +160,7 @@ export default function App() {
         </div>
 
         <Slider1 />
+        <StatisticsDisplay />
       </div>
     </div>
   );

@@ -24,19 +24,34 @@ const Footer = () => {
             </span>
           </div>
           <div className="media-icons">
-            <a href="https://www.facebook.com/IIITKottayamofficial/" className="flex justify-center align-center">
+            <a
+              href="https://www.facebook.com/IIITKottayamofficial/"
+              className="flex justify-center align-center"
+            >
               <FontAwesomeIcon icon={faFacebookF} className="w-50" />
             </a>
-            <a href="https://www.linkedin.com/company/placement-iiitkottayam" className="flex justify-center align-center">
+            <a
+              href="https://www.linkedin.com/company/placement-iiitkottayam"
+              className="flex justify-center align-center"
+            >
               <FontAwesomeIcon icon={faInstagram} className="w-50" />
             </a>
-            <a href="https://www.linkedin.com/in/iiit-kottayam" className="flex justify-center align-center">
+            <a
+              href="https://www.linkedin.com/in/iiit-kottayam"
+              className="flex justify-center align-center"
+            >
               <FontAwesomeIcon icon={faLinkedinIn} className="w-50" />
             </a>
-            <a href="https://twitter.com/IIITKKottayam" className="flex justify-center align-center">
+            <a
+              href="https://twitter.com/IIITKKottayam"
+              className="flex justify-center align-center"
+            >
               <FontAwesomeIcon icon={faTwitter} className="w-50" />
             </a>
-            <a href="https://www.youtube.com/channel/UC3jrKDXjl7_c5bld5x8C1vw" className="flex justify-center align-center">
+            <a
+              href="https://www.youtube.com/channel/UC3jrKDXjl7_c5bld5x8C1vw"
+              className="flex justify-center align-center"
+            >
               <FontAwesomeIcon icon={faYoutube} className="w-50" />
             </a>
           </div>
@@ -53,18 +68,6 @@ const Footer = () => {
               Importance” by an Act of Parliament enacted in 2017.
             </li>
           </ul> */}
-          <ul className="box">
-            <li className="link_name">Links</li>
-            <li>
-              <a href="https://www.iiitkottayam.ac.in/">About Us</a>
-            </li>
-            <li>
-              <a href="/why-iiitk">Why recruit us</a>
-            </li>
-            <li>
-              <a href="/recruiter">For recruiters</a>
-            </li>
-          </ul>
 
           <ul className="box">
             <li className="link_name">Contact Us</li>
@@ -88,8 +91,19 @@ const Footer = () => {
                 Kerala, India
               </a>{" "}
             </li>
-            {/* <li><input type="text" placeholder="Enter your email"/></li>
-          <li><input type="button" value="Connect"/></li> */}
+          </ul>
+
+          <ul className="box">
+            <li className="link_name">Links</li>
+            <li>
+              <a href="https://www.iiitkottayam.ac.in/">About Us</a>
+            </li>
+            <li>
+              <a href="/why-iiitk">Why recruit us</a>
+            </li>
+            <li>
+              <a href="/recruiter">For recruiters</a>
+            </li>
           </ul>
 
           <ul className="box">
@@ -107,13 +121,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="bottom-details">
-        <div className="bottom_text flex" style={{justifyContent:"center"}}>
+        <div className="bottom_text flex" style={{ justifyContent: "center" }}>
           <span className="copyright_text">
             Copyright © 2024{" "}
             <a href="#">Training and Placement Cell Committee</a>All rights
             reserved
           </span>
-         
         </div>
       </div>
     </footer>

@@ -1,17 +1,15 @@
-import Image from "next/image";
 import NavBar from "../components/navbar";
 import Hero from "./sections/hero_section";
 import Brochures from "./sections/brochures_section";
 import People from "./sections/people_section";
-import News from "./sections/news_section";
-import Highlights from "./sections/highlights_section";
+import Highlights from "../why-iiitk/sections/highlights_section";
 import PastRecruiters from "./sections/pastRecruiters_section";
+import PointOfContact from "./sections/poc";
 import Footer from "../components/footer";
-import LogoGrid from "../components/LogoGrid";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <NavBar />
       <Hero />
       <People />
@@ -19,9 +17,10 @@ export default function Home() {
       <Brochures />
       {/* <About /> */}
       {/* <News /> */}
-      <Highlights />
+      <PointOfContact />
+      {/* <Highlights /> */}
       {/* <LogoGrid /> */}
       <Footer />
-    </div>
+    </>
   );
 }

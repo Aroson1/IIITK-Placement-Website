@@ -86,7 +86,7 @@ const Highlights = () => {
       </section>
       {/* <Slider /> */}
       <div className="h-70">
-        <div className="box">
+        <div className="boxin">
           <Carousel transitionTime={310} swipeable={true}>
             {images.map((URL, index) => (
               <div className="slide">

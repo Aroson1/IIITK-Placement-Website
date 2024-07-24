@@ -3,7 +3,8 @@ import Navbar from "../components/navbar";
 
 import About from "./sections/about_section";
 import WhyRecruit from "./sections/why_recruit";
-// import Carousel from "../components/testimonial/Carousel";
+import Highlights from "./sections/highlights_section";
+import TestimonialCarousel from "../components/testimonial/Carousel";
 
 
 export default function page() {
@@ -11,9 +12,10 @@ export default function page() {
         <>
         <Navbar />
         <About />
+        <Highlights />
         <WhyRecruit/>
+        <TestimonialCarousel/>
         <Footer />
-        {/* <Carousel.render/> */}
 
         {/* <Slider /> */}
         </>
