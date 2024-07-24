@@ -5,7 +5,7 @@ const People = () => {
   let isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
   return (
     <div id="Students">
-      <div className="flex flex-col ml-12 max-w-full text-4xl text-gray-900 leading-[55px] w-[357px] max-md:ml-2.5">
+      <div className="flex flex-col ml-12 pt-[7vh] max-w-full text-4xl text-gray-900 leading-[55px] w-[357px] max-md:ml-2.5">
         <div className="" />
         <div
           className="h-[5px] w-[69px]"

@@ -49,16 +49,16 @@ const renderCenterLeftControls = ({}) => <div></div>;
 
 function Slider1() {
   const colors = [
-    { year: "Year 2020-21", pdf: "./brochures/Placement Brochure'23.pdf" },
-    { year: "Year 2021-22", pdf: "./brochures/Placement Brochure'23.pdf" },
-    { year: "Year 2022-23", pdf: "./brochures/Placement Brochure'23.pdf" },
+    // { year: "Year 2020-21", pdf: "./brochures/Placement Brochure'23.pdf" },
+    // { year: "Year 2021-22", pdf: "./brochures/Placement Brochure'23.pdf" },
+    // { year: "Year 2022-23", pdf: "./brochures/Placement Brochure'23.pdf" },
     { year: "Year 2023-24", pdf: "./brochures/Placement Brochure'23.pdf" },
   ];
   var isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
 
   return (
     <div
-      className="section p-[3%] w-full mx-auto" // Added w-full and mx-auto for full width and horizontal centering
+      className="section w-full mx-auto" // Added w-full and mx-auto for full width and horizontal centering
       style={
         {
           // Other styles remain unchanged
@@ -68,14 +68,19 @@ function Slider1() {
     >
       <Carousel
         slidesToScroll={1}
-        slidesToShow={isSmallScreen ? 1 : 3}
+        // changed to 1 as only current brochure is available
+        slidesToShow={isSmallScreen ? 1 : 1}
         scrollMode="remainder"
         cellSpacing={isSmallScreen ? "10" : "50"}
         disableEdgeSwiping={false}
         dragging={false}
-        renderBottomCenterControls={renderBottomCenterControls}
-        renderCenterRightControls={renderCenterRightControls}
-        renderCenterLeftControls={renderCenterLeftControls}
+        // Hide the controls as only one brochure is available
+        // renderBottomCenterControls={renderBottomCenterControls}
+        // renderCenterRightControls={renderCenterRightControls}
+        // renderCenterLeftControls={renderCenterLeftControls}
+        renderBottomCenterControls={null}
+        renderCenterRightControls={null}
+        renderCenterLeftControls={null}
         style={{
           paddingBottom: "40px",
           paddingTop: "40px",
@@ -123,7 +128,7 @@ function Slider1() {
 
 export default function App() {
   return (
-    <div className="outersection mb-5 mt-5">
+    <div className="outersection">
       <div
         className="innersection flex flex-col items-center justify-center relative bg-green-700 p-[3%] md:p-[4%] lg:p-[4%]"
         style={{

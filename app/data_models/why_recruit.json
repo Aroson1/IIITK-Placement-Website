@@ -1,15 +1,22 @@
 [
-    {
-      "title": "Title 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-      "title": "Title 2",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-      "title": "Title 3",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    }
-  ]
-  
+  {
+    "title": "Exceptional Placement Support",
+    "description": "IIIT Kottayam's dedicated placement cell works tirelessly to prepare students for the job market, offering comprehensive training, resources, and support. This has resulted in remarkable success, with graduates securing high-paying jobs and international offers."
+  },
+  {
+    "title": "Strong Industry Connections",
+    "description": "The institute has established robust connections with major IT giants, ensuring students gain practical, real-time experience. Industry partnerships with renowned companies like Amazon, IBM, Bosch, Nissan, TCS, Infosys, Nvidia, Cognizant, and many others provide students with opportunities to work on industry-relevant projects, internships, and collaborative research."
+  },
+  {
+    "title": "Impressive Placement Statistics",
+    "description": "Despite the challenging economic environment, IIIT Kottayam's placement cell has successfully placed 85 percent of its students. The highest domestic CTC for the 2024 batch is 45 LPA, while the highest international CTC is 23 LPA. The placement cell is committed to achieving 100 percent placements for the 2024 batch."
+  },
+  {
+    "title": "Global Opportunities",
+    "description": "The institute not only focuses on domestic placements but also on global opportunities, with numerous foreign internships and four international placements."
+  },
+  {
+    "title": "Comprehensive Training Programs",
+    "description": "IIIT Kottayam provides students with a well-rounded education and training programs that prepare them to excel in the ever-evolving tech landscape. This holistic approach ensures that students are well-prepared to embark on successful careers."
+  }
+]

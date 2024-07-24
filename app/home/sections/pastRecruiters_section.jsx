@@ -15,7 +15,7 @@ export default function PastRecruiters() {
     >
       <div className="w-full max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
-          <div className="flex flex-col max-md:ml-0 max-md:w-full ">
+          <div className="flex flex-col max-md:ml-0 w-full ">
             <div className="max-md:mt-3 max-md:max-w-full">
               <div className="flex  max-md:flex-col max-md:gap-0 max-md:">
                 <div className="flex flex-col w-3/5 max-md:ml-0 max-md:w-full ">

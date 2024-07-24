@@ -9,7 +9,7 @@ import arrow from "../../public/stats.svg";
 
 function Hero() {
   return (
-    <section className="mb-20">
+    <section className="mb-20 pt-10">
       <div className="justify-center py-10 pl-11 w-full shadow-sm max-md:pl-5 max-md:max-w-full b">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
           <div className="flex flex-col w-[39%] max-md:ml-0 max-md:w-full">

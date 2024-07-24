@@ -2,19 +2,21 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../../styles/imageSlider.css";
+import pic1 from "../../../public/images/highlights/01.jpeg";
+import pic2 from "../../../public/images/highlights/02.jpeg";
+import pic3 from "../../../public/images/highlights/03.jpeg";
+import pic4 from "../../../public/images/highlights/04.jpeg";
+import pic5 from "../../../public/images/highlights/05.jpeg";
+import pic6 from "../../../public/images/highlights/06.jpeg";
+import Image from "next/image";
+
 const images = [
-  "https://res.cloudinary.com/demo/image/upload/v1652345767/docs/demo_image2.jpg",
-  "https://res.cloudinary.com/demo/image/upload/v1652366604/docs/demo_image5.jpg",
-  "https://res.cloudinary.com/demo/image/upload/v1652345874/docs/demo_image1.jpg",
-  "https://res.cloudinary.com/demo/image/upload/v1652345767/docs/demo_image2.jpg",
-  "https://res.cloudinary.com/demo/image/upload/v1652366604/docs/demo_image5.jpg",
-  "https://res.cloudinary.com/demo/image/upload/v1652345874/docs/demo_image1.jpg",
-  "https://res.cloudinary.com/demo/image/upload/v1652345767/docs/demo_image2.jpg",
-  "https://res.cloudinary.com/demo/image/upload/v1652366604/docs/demo_image5.jpg",
-  "https://res.cloudinary.com/demo/image/upload/v1652345874/docs/demo_image1.jpg",
-  "https://res.cloudinary.com/demo/image/upload/v1652345767/docs/demo_image2.jpg",
-  "https://res.cloudinary.com/demo/image/upload/v1652366604/docs/demo_image5.jpg",
-  "https://res.cloudinary.com/demo/image/upload/v1652345874/docs/demo_image1.jpg",
+  pic1,
+  pic2,
+  pic3,
+  pic4,
+  pic5,
+  pic6,
 ];
 
 const rotateAnimationHandler = (props, state) => {
@@ -83,12 +85,12 @@ const Highlights = () => {
         </div>
       </section>
       {/* <Slider /> */}
-      <div className="h-50">
+      <div className="h-70">
         <div className="box">
           <Carousel transitionTime={310} swipeable={true}>
             {images.map((URL, index) => (
               <div className="slide">
-                <img alt="sample_file" src={URL} key={index} />
+                <Image alt="sample_file" src={URL} key={index} />
               </div>
             ))}
           </Carousel>

@@ -10,7 +10,7 @@ export default function About() {
 
   return (
     <div
-      className={`flex flex-col ${isSmallScreen ? "px-0" : "px-5 md:px-8"} `}
+      className={`flex flex-col ${isSmallScreen ? "px-0" : "px-5 md:px-8"} pt-[7%]`}
       id="about"
     >
       <div className="w-full max-md:max-w-full">

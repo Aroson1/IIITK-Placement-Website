@@ -14,12 +14,12 @@ export default function Home() {
     <div>
       <NavBar />
       <Hero />
+      <People />
+      <PastRecruiters />
       <Brochures />
       {/* <About /> */}
-      <People />
       {/* <News /> */}
       <Highlights />
-      <PastRecruiters />
       {/* <LogoGrid /> */}
       <Footer />
     </div>

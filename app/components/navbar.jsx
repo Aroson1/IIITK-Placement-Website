@@ -16,9 +16,9 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-[100vw] mb-16 flex justify-between items-center px-16 py-2.5 font-semibold bg-white shadow-2xl">
+    <div className="w-[100vw] mb-16 flex fixed z-50 justify-between items-center px-16 py-2.5 font-semibold bg-white shadow-2xl">
       <div className="flex cursor-pointer self-stretch my-auto text-2xl leading-8 text-green-700">
-        SPC | <span>IIITK</span>
+        TPC | <span>IIITK</span>
       </div>
       <div className="hidden md:flex gap-12 justify-between self-stretch py-2.5 text-base font-medium leading-6 text-slate-600">
         <div className="flex-auto cursor-pointer">
@@ -28,10 +28,11 @@ export default function Navbar() {
         </div>
         <div className="flex-auto cursor-pointer">
           <Link href="/why-iiitk" className="text-inherit no-underline">
-            <div>Why IIITK</div>
+            <div>Why recruit us</div>
           </Link>
         </div>
-        <div className="cursor-pointer">For Students</div>
+        {/*Removed for students  */}
+        {/* <div className="cursor-pointer">For Students</div> */}
         <div className="flex-auto cursor-pointer">
           <Link href="/recruiter" className="text-inherit no-underline">
             <div>For Recruiters</div>
@@ -74,9 +75,10 @@ export default function Navbar() {
           >
             Home
           </Link>
-          <div className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-green-500">
+          {/* Removed the For students page */}
+          {/* <div className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-green-500">
             For Students
-          </div>
+          </div> */}
           <Link
             href="/recruiter"
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-green-500"
@@ -84,10 +86,10 @@ export default function Navbar() {
             For Recruiters
           </Link>
           <Link
-            href="/recruiter"
+            href="/why-iiitk"
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-green-500"
           >
-            Why IIITK
+            Why Recruit Us
           </Link>
           <div className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-green-500">
             Contact Us

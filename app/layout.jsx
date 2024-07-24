@@ -5,15 +5,14 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Student Placement Committee | IIIT-K",
-  description:
-    "Student Placement Committee of Indian Institute of Information Technology, Kottayam.",
+  title: "Training and Placement Committee | IIIT-K",
+  description: "Training and Placement Committee of Indian Institute of Information Technology, Kottayam.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta name="description" content={metadata.description} />
         <link rel="icon" href="/favicon.png" />
         <link
@@ -25,7 +24,9 @@ export default function RootLayout({ children }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         />
         <script src="./swiper-bundle.min.js"></script>
-      </Head>
+        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' />
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' />
+      </head>
       <body className={inter.className} style={{ overflowX: "clip" }}>
         {children}
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>

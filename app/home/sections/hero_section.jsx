@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import heroimage from "../../../public/college.jpeg";
+import heroimage from "../../../public/images/download.jpg";
 import Image from "next/image";
 
 export default function Hero() {
@@ -11,10 +11,10 @@ export default function Hero() {
     });
   };
   return (
-    <div className="flex w-screen justify-center" id="hero">
+    <div className="flex w-screen justify-center pt-[7%]" id="hero">
       <div className="flex justify-center w-3/4 items-start px-11 py-12 shadow-2xl max-md:px-5 max-lg:flex-wrap-reverse">
         <div className="flex flex-col ">
-          <div className="pt-14 pl-11 mt-8 mr-8 text-5xl font-extrabold text-gray-900 bg-clip-text leading-[71px] max-md:text-4xl max-md:leading-[59px]">
+          <div className="pt-2 pl-11 mt-8 mr-8 text-5xl font-extrabold text-gray-900 bg-clip-text leading-[71px] max-md:text-4xl max-md:leading-[59px]">
             <span className="text-5xl font-light">Welcome to IIITK </span>
             <br />
             <span
@@ -53,7 +53,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="max-w-[100%]">
+        <div className="max-w-[100%] content" >
           <Image
             src={heroimage}
             alt="hero-image"
