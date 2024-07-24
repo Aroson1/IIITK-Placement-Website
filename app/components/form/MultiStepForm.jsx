@@ -84,7 +84,7 @@ const MultiStepForm = () => {
       <div className="bg-white shadow-lg rounded-xl p-6 overflow-x-auto">
         <form onSubmit={handleSubmit} className="max-w-full">
           {currentStep === 0 && (
-            <div className="flex flex-col text-lg leading-5 text-indigo-950">
+            <div className="flex flex-col text-sm leading-5 text-indigo-950">
               <div className="w-full text-2xl font-bold leading-9">
                 Company details
               </div>
@@ -125,7 +125,7 @@ const MultiStepForm = () => {
               <div className="w-full text-2xl font-bold leading-9 text-indigo-950">
                 HR Contact details
               </div>
-              <div className="mt-2 w-full text-lg leading-8 text-slate-500">
+              <div className="mt-2 w-full text-sm leading-8 text-slate-500">
                 Lorem ipsum dolor sit amet consectetur adipisc.
               </div>
               <div className="flex flex-wrap gap-5 mt-5 text-slate-500">
@@ -167,7 +167,7 @@ const MultiStepForm = () => {
               <div className="w-full text-2xl font-bold leading-9 text-indigo-950">
                 Job Details
               </div>
-              <div className="mt-2 w-full text-lg leading-8 text-slate-500">
+              <div className="mt-2 w-full text-sm leading-8 text-slate-500">
                 Lorem ipsum dolor sit amet consectetur adipisc.
               </div>
               {formData.jobs.map((job, index) => (

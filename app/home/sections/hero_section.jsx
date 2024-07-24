@@ -1,8 +1,15 @@
+"use client";
 import * as React from "react";
 import heroimage from "../../../public/college.jpeg";
 import Image from "next/image";
 
 export default function Hero() {
+  const scrollToFooter = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="flex w-screen justify-center" id="hero">
       <div className="flex justify-center w-3/4 items-start px-11 py-12 shadow-2xl max-md:px-5 max-lg:flex-wrap-reverse">
@@ -35,6 +42,7 @@ export default function Hero() {
             </span>
             OMMITTEE
             <div
+              onClick={scrollToFooter}
               style={{
                 background:
                   "linear-gradient(to right, rgba(103, 226, 114, 1), rgba(22, 139, 27, 1))",

@@ -1,12 +1,18 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
+import logo from "../../public/favicon.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleRedirect = () => {
+    window.location.href = "https://www.iiitkottayam.ac.in/#!/home";
   };
 
   return (
@@ -31,17 +37,11 @@ export default function Navbar() {
             <div>For Recruiters</div>
           </Link>
         </div>
-        
+
         {/* <div className="cursor-pointer grow whitespace-nowrap">Contact Us</div> */}
       </div>
-      <div
-        style={{
-          background:
-            "linear-gradient(to right, rgba(103, 226, 114, 1), rgba(22, 139, 27, 1))",
-        }}
-        className="hidden md:flex cursor-pointer justify-center px-6 py-3.5 text-sm font-semibold leading-4 whitespace-nowrap rounded-md shadow-sm text-neutral-50"
-      >
-        Login/Register
+      <div onClick={handleRedirect} style={{ cursor: "pointer" }}>
+        <Image src={logo} alt="logo" width={100} height={100} />
       </div>
       <div className="md:hidden flex items-center">
         <button

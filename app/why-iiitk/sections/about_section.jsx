@@ -17,7 +17,7 @@ export default function About() {
         <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
           <div className="flex flex-col max-md:ml-0 max-md:w-full ">
             <div className="max-md:mt-3 max-md:max-w-full">
-              <div className="flex  max-md:flex-col max-md:gap-0 max-md:">
+              <div className="flex max-md:flex-col max-md:gap-0 max-md:">
                 <div className="flex flex-col w-3/5 max-md:ml-0 max-md:w-full ">
                   <div className="flex flex-col grow px-5 mt-20 max-md:mt-10 max-md:max-w-full ">
                     <div
@@ -27,11 +27,11 @@ export default function About() {
                           "linear-gradient(to right, rgba(103, 226, 114, 1), rgba(22, 139, 27, 1))",
                       }}
                     />
-                    <div className="mt-5 text-4xl font-bold  bg-clip-text leading-[55px] max-md:max-w-full mr-6">
+                    <div className="mt-5 text-3xl font-bold bg-clip-text leading-[45px] max-md:max-w-full mr-6">
                       <span
                         style={{
                           fontFamily: "Inter",
-                          fontSize: "35px",
+                          fontSize: "30px", // Reduced font size
                           fontWeight: "400",
                         }}
                       >
@@ -52,7 +52,7 @@ export default function About() {
                       </span>
                     </div>
                     <div
-                      className="mt-8 text-lg leading-9  max-md:max-w-full"
+                      className="mt-8 text-base leading-7 max-md:max-w-full"
                       style={{ color: "rgba(113, 128, 150, 1)" }}
                     >
                       The IIIT Kottayam Placement Cell aims to facilitate the
@@ -67,58 +67,41 @@ export default function About() {
                       guidance and the necessary skills to succeed in their
                       careers
                     </div>
+                    <div className="flex justi  self-start px-5 text-base font-medium leading-6 whitespace-nowrap mb-16">
+                      <a href="/brochures/recruiterscorner.pdf" target="_blank">
+                        <button style={{ display: "flex" }}>
+                          <div
+                            className="grow"
+                            style={{
+                              color: "rgba(78, 220, 72, 1)",
+                            }}
+                          >
+                            See more Information
+                          </div>
+                          <Image src={arrow} width={20} height={20} />{" "}
+                          {/* Adjusted size of arrow if needed */}
+                        </button>
+                      </a>
+                    </div>
                   </div>
                 </div>
                 {isSmallScreen ? (
                   <div></div>
                 ) : (
-                  <div className="flex content-center items-right">
-                    <Image
-                      // loading="lazy"
-                      src={logo}
-                      // src="https://cdn.builder.io/api/v1/image/assets/TEMP/d4c8d0f33427a0a0c531983c7445b3d61292b1fcd1fd9c0356cd1ce928a21d65?"
-                      className="w-full"
-                    />
+                  <div className="flex content-center items-right w-[40%]">
+                    <Image src={logo} alt="logo" className="w-full" />
                   </div>
                 )}
               </div>
             </div>
           </div>
-          {/* {isSmallScreen ? (
-            <div></div>
-          ) : (
-            <div
-              style={{
-                display: "flex",
-                alignItems: "end",
-              }}
-            >
-              <Image src={logo} alt="logo" />
-            </div>
-          )} */}
         </div>
-      </div>
-
-      <div className="flex gap-4 justify-end self-start px-5 text-base font-medium leading-6  whitespace-nowrap mb-16">
-        <a href="/brochures/recruiterscorner.pdf" target="_blank">
-          <button style={{ display: "flex" }}>
-            <div
-              className="grow"
-              style={{
-                color: "rgba(78, 220, 72, 1)",
-              }}
-            >
-              See more Information
-            </div>
-            <Image src={arrow} />
-          </button>
-        </a>
       </div>
 
       <div
         className={`flex flex-col gap-2 ${isSmallScreen ? "mr-4" : "mr-14"}`}
       >
-        <div className="flex gap-5 justify-between self-start px-5 text-4xl font-bold whitespace-nowrap leading-[54.95px]">
+        <div className="flex gap-5 justify-between self-start px-5 text-3xl font-bold whitespace-nowrap leading-[45px]">
           <div
             className="h-[69px] w-[5px]"
             style={{
@@ -139,12 +122,11 @@ export default function About() {
           </div>
         </div>
         <div
-          className={`justify-center p-8 text-lg leading-9 rounded-3xl bg-slate-50 max-w-[964px]  max-md:px-5  ${
+          className={`justify-center p-8 text-base leading-7 rounded-3xl bg-slate-50 max-w-[964px]  max-md:px-5  ${
             isSmallScreen ? "ml-4" : "ml-20"
           }`}
           style={{
             color: "rgba(113, 128, 150, 1)",
-
             boxShadow: "0px 5px 10px -5px rgba(0,0,0,0.75)",
           }}
         >
@@ -158,7 +140,7 @@ export default function About() {
         </div>
       </div>
       <div className={`flex flex-col mt-5 ${isSmallScreen ? "ml-4" : "ml-5"}`}>
-        <div className="flex gap-4 self-end px-5 text-4xl font-bold whitespace-nowrap leading-[54.95px] mb-2">
+        <div className="flex gap-4 self-end px-5 text-3xl font-bold whitespace-nowrap leading-[45px] mb-2">
           <div
             className="my-auto bg-clip-text"
             style={{
@@ -179,7 +161,7 @@ export default function About() {
           />
         </div>
         <div
-          className={`justify-center p-8 text-lg leading-9 rounded-3xl bg-slate-50 max-w-[964px]  max-md:px-5 self-end  ${
+          className={`justify-center p-8 text-base leading-7 rounded-3xl bg-slate-50 max-w-[964px]  max-md:px-5 self-end  ${
             isSmallScreen ? "mr-4" : "mr-20"
           }`}
           style={{
