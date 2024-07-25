@@ -36,16 +36,16 @@ const PointOfContact = () => {
             <div class="flex flex-col items-center pb-5 pt-2">
               <img
                 class="w-24 h-24 mb-2 rounded-full shadow-lg"
-                src="https://placehold.it/64x64"
-                alt="Bonnie image"
+                src="/images/peoples_section/mathew.jpeg"
+                alt="Dr. Mathew C D"
               />
               <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                 <a
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/in/dr-mathew-c-d-77418927/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Mathew Sir
+                  Dr. Mathew C D
                 </a>
               </h5>
               <span class="text-sm text-gray-500 dark:text-gray-400">
@@ -53,15 +53,15 @@ const PointOfContact = () => {
               </span>
               <div class="flex mt-2 md:mt-2">
                 <span class="text-sm text-gray-500 dark:text-gray-400">
-                  +91 1234567890{" | "}
-                  <a href="#" class="text-sm text-gray-500 dark:text-gray-400">
-                    hello@gmail.com
+                  +91 79029 69784{" | "}
+                  <a href="mailto:placementcoordinator@iiitkottayam.ac.in" class="text-sm text-gray-500 dark:text-gray-400">
+                  placementcoordinator@iiitkottayam.ac.in
                   </a>
                 </span>
               </div>
               <div class="flex mt-3 md:mt-2">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/dr-mathew-c-d-77418927/"
                   class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   LinkedIn
@@ -70,7 +70,7 @@ const PointOfContact = () => {
             </div>
           </div>
 
-          <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          {/* <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div class="flex flex-col items-center pb-5 pt-2">
               <img
                 class="w-24 h-24 mb-2 rounded-full shadow-lg"
@@ -106,7 +106,7 @@ const PointOfContact = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </figure>
         <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
           <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
@@ -123,15 +123,15 @@ const PointOfContact = () => {
             <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
               <div>
                 <a
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/in/darisipriyatham/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Person One
+                  Darisi Priyatham
                 </a>
               </div>
               <div class="text-sm text-gray-500 dark:text-gray-400">
-                Designation
+                Student Cooridinator
               </div>
             </div>
             <img
@@ -142,15 +142,15 @@ const PointOfContact = () => {
             <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
               <div>
                 <a
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/in/aaditi-chikhalkar-61a11a26a/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Person Two
+                  Aaditi Chikhalkar
                 </a>
               </div>
               <div class="text-sm text-gray-500 dark:text-gray-400">
-                Designation
+                Student Cooridinator
               </div>
             </div>
           </figcaption>
