@@ -20,8 +20,12 @@ const Footer = () => {
           <div className="logo-details">
             <i className="fab fa-slack"></i>
             <span className="logo_name">
-              <img src="./LogoLong.png" alt="" className="w-50" />
+              <a href="https://www.iiitkottayam.ac.in">
+              <img src="./Footer_logo_1.svg" alt="" className="w-62" />
+              {/* <img src="./LogoLong.png" alt="" className="w-50" /> */}
+              </a>
             </span>
+            <br/>
           </div>
           <div className="media-icons">
             <a

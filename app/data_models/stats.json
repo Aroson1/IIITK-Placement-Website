@@ -1,4 +1,56 @@
 {
+  "2024": {
+    "linear": [
+      {
+        "title": "Placement Percentage",
+        "value": 83,
+        "max": 100,
+        "subtitle": "83%",
+        "icon": "📊"
+      },
+      {
+        "title": "No. of Startups",
+        "value": 22,
+        "max": 22,
+        "subtitle": "22",
+        "icon": "🚀"
+      },
+      {
+        "title": "Companies",
+        "value": 86,
+        "max": 86,
+        "subtitle": "86",
+        "icon": "🏢"
+      },
+      {
+        "title": "Median Package",
+        "value": 10.5,
+        "max": 11,
+        "subtitle": "10.5",
+        "icon": "💼"
+      }
+    ],
+    "circular": [
+      {
+        "title": "Highest Domestic Package",
+        "value": 45,
+        "max": 100,
+        "suffix": "LPA"
+      },
+      {
+        "title": "Highest International Package",
+        "value": 44,
+        "max": 100,
+        "suffix": "LPA"
+      },
+      {
+        "title": "Average Package",
+        "value": 12.70,
+        "max": 32,
+        "suffix": "LPA"
+      }
+    ]
+  },
   "2023": {
     "linear": [
       {

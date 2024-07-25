@@ -30,7 +30,7 @@ export default function About() {
                     <div className="mt-5 text-3xl font-bold bg-clip-text leading-[45px] max-md:max-w-full mr-6">
                       <span
                         style={{
-                          fontFamily: "Inter",
+                          // fontFamily: "Inter",
                           fontSize: "30px", // Reduced font size
                           fontWeight: "400",
                         }}

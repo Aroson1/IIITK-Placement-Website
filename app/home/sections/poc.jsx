@@ -31,8 +31,12 @@ const PointOfContact = () => {
         </div>
       </section>
       <div class="grid mx-12 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800">
-        <figure class="flex flex-col md:flex-row items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
-          <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-8 md:mb-0 md:mr-4">
+        {/* <figure class="flex flex-col md:flex-row items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700"> */}
+        <figure class="flex flex-col md:flex-row items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 ">
+
+          {/* <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-8 md:mb-0 md:mr-4"> */}
+          <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800  mb-8 md:mb-0 md:mr-4">
+
             <div class="flex flex-col items-center pb-5 pt-2">
               <img
                 class="w-24 h-24 mb-2 rounded-full shadow-lg"
@@ -108,18 +112,20 @@ const PointOfContact = () => {
             </div>
           </div> */}
         </figure>
-        <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
+        {/* <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700"> */}
+        <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800">
+
           <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
               Student Coordinators
             </h3>
           </blockquote>
           <figcaption class="flex items-center justify-center ">
-            <img
+            {/* <img
               class="rounded-full w-9 h-9"
               src="https://placehold.it/64x64"
               alt="profile picture"
-            />
+            /> */}
             <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
               <div>
                 <a
@@ -134,11 +140,11 @@ const PointOfContact = () => {
                 Student Cooridinator
               </div>
             </div>
-            <img
+            {/* <img
               class="rounded-full w-9 h-9 ml-3"
               src="https://placehold.it/64x64"
               alt="profile picture"
-            />
+            /> */}
             <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
               <div>
                 <a

@@ -53,7 +53,9 @@ const sliderContent = data.map((item, index) => (
         <div className="card-content">
           <p
             className="description leading-6"
-            style={{ zIndex: 10, fontFamily: "inter" }}
+            // style={{ zIndex: 10, fontFamily: "inter" }}
+            style={{ zIndex: 10 }}
+
           >
             {item.description}
           </p>

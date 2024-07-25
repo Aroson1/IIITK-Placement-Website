@@ -13,7 +13,7 @@ import pic8 from "../../../public/images/highlights/08.jpg"
 
 import Image from "next/image";
 
-const images = [pic1, pic2, pic3, pic4, pic5, pic6,pic7,pic8];
+const images = [pic8,pic7,pic1, pic2, pic3, pic4, pic5, pic6];
 
 const rotateAnimationHandler = (props, state) => {
   const transitionTime = props.transitionTime + "ms";

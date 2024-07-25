@@ -119,9 +119,8 @@ function TandC() {
               with individual students until the day of interviews. This
               includes phone calls, e-mails and any other means of
               communication. In cases where the company is required to
-              communicate with the shortlisted candidates directly, it would
-              need to be done with the express permission of the Placement &
-              Internship Office.
+              communicate with the shortlisted candidates directly, it should be
+              informed to TPC priorly.
             </span>
           </li>
           <li>
@@ -129,35 +128,52 @@ function TandC() {
               3. The company agrees to safeguard the personal data of students
               obtained through the Placement & Internship Office or its
               representatives including, but not limited to, name, phone number,
-              e-mail address, gender, age, academic history. In turn, the
-              Placement & Internship Office declares and agrees to keep the
-              recruiter data confidential and use it only for recruitment
-              purposes of all students in the institute.
+              e-mail address, gender, age, academic history. In turn, the TPC
+              declares and agrees to keep the recruiter data confidential and
+              use it only for recruitment purposes of all students in the
+              institute.
+            </span>
+          </li>
+          <li>
+            <span className="leading-4 ">
+              4. Companies offering Intern + Performance-based PPOs to students
+              for durations exceeding 6 months are urged by the TPC to extend
+              the PPOs on or before December 31, 2024, or by the end of the
+              6-month period, whichever comes first.
+            </span>
+          </li>
+          <li>
+            <span className="leading-8 ">
+              5. During the selection process, if the company finds that a
+              particular student is suitable for a position which is different
+              from that mentioned in JD, the company can still hire him.
+              However, this should be discussed with the TPC and the formalities
+              for the student remain the same as remaining shortlisted students.
+            </span>
+          </li>
+          <li>
+            <span className="leading-8">
+              6. Company representatives are requested to read the student
+              policy document to understand various regulations set forth by the
+              TPC for the students.
+            </span>
+          </li>
+          <li>
+            <span className="leading-8">
+              7. All the offer should be intimated to the selected students
+              through the TPC. The companies must issue offer letters to the
+              selected students within three months from the date of hiring.
+            </span>
+          </li>
+          <li>
+            <span className="leading-8">
+              8. In case of a deferred joining date, change in the package
+              and/or profile, and withdrawal offers, the same is to be intimated
+              to the TPC with suitable justification for such a decision at the
+              earliest.
             </span>
           </li>
         </ol>
-        <span className="leading-4 ">
-          Founded in 1959, the Indian Institute of Technology Madras is one of
-          the national centres of excellence in engineering education and
-          research. Over the decades the institute has worked hard to earn a
-          very high repute among the general public, the academia as well the
-          industry. Setting standards of excellence in all our endeavours,
-          namely Teaching, Research and Consultancy, IITM has pushed the
-          frontiers of technological knowledge as well as served the nation in
-          all its capacity for technical and scientific advancement.
-        </span>
-        <span className="leading-8 ">
-          Maintaining strong relations with the industry is one of the
-          priorities of the institute. Through Industrial Consultancy and
-          Sponsored Research (IC & SR), the faculty and staff of the institute
-          get to work on collaborative projects with the industry. Many
-          companies also pursue joint research programs with various departments
-          and also sponsor individual projects. Scientists and researchers from
-          top firms also visit the institute frequently for technical lectures
-          and interactions. In order to give the students a valuable exposure to
-          the industry, internships are encouraged and are included as a
-          mandatory part in the undergraduate curriculum.
-        </span>
       </div>
     </section>
   );
