@@ -54,8 +54,8 @@ const PointOfContact = () => {
               <div class="flex mt-2 md:mt-2">
                 <span class="text-sm text-gray-500 dark:text-gray-400">
                   +91 79029 69784{" | "}
-                  <a href="mailto:placement@iiitkottayam.ac.in" class="text-sm text-gray-500 dark:text-gray-400">
-                  placement@iiitkottayam.ac.in
+                  <a href="mailto:mathewcd@iiitkottayam.ac.in" class="text-sm text-gray-500 dark:text-gray-400">
+                  mathewcd@iiitkottayam.ac.in
                   </a>
                 </span>
               </div>
