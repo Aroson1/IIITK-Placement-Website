@@ -13,26 +13,9 @@ import StatisticsDisplay from "../home/sections/stats";
 import viewPdf from "../../public/assets/viewPdf.svg";
 import statsData from "../data_models/stats.json";
 
-const renderCenterLeftControls = ({ previousSlide }) => (
-  <button
-    onClick={previousSlide}
-    className="carousel-control items-start inline-block"
-  >
-    <Image src={btnleft} alt="left-button" width={70} height={70} />
-  </button>
-);
+const renderCenterLeftControls = () => {};
 
-const renderCenterRightControls = ({ nextSlide }) => (
-  <button onClick={nextSlide} className="carousel-control">
-    <Image
-      src={btnleft}
-      alt="right-button"
-      width={70}
-      height={70}
-      style={{ transform: "rotate(-180deg)" }}
-    />
-  </button>
-);
+const renderCenterRightControls = () => {};
 
 export const CustomDots = () => {
   const { totalPages, currentPage, goToPage } = Carousel();
@@ -77,10 +60,10 @@ export default function Slider3() {
     >
       <Carousel
         slideIndex={0} // Set the initial slide index
-        disableEdgeSwiping={false}
+        disableEdgeSwiping={true}
         autoplay={true}
         wrapAround={true}
-        autoplayInterval={2000}
+        autoplayInterval={5000}
         dragThreshold={0.2}
         renderCenterLeftControls={renderCenterLeftControls}
         renderCenterRightControls={renderCenterRightControls}
@@ -94,7 +77,7 @@ export default function Slider3() {
               }`}
             >
               <div className="max-md:max-w-full flex gap-5 max-md:flex-col max-md:gap-0">
-                <div className="flex justify-center items-center w-full max-md:ml-0 max-md:w-full">
+                <div className="flex justify-center items-center w-full max-md:ml-0 max-md:w-full mb-4">
                   <div className="flex flex-col text-base font-extrabold leading-9  max-md:mt-6">
                     <div className="flex self-center gap-2 mb-4">
                       <h2 className="text-center text-xl font-bold">
