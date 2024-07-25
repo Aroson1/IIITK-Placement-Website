@@ -62,7 +62,7 @@ const Highlights = () => {
   return (
     <>
       <section
-        className="self-stretch  flex flex-row items-start justify-start py-10 pr-[13px] pl-[25px] box-border max-w-full shrink-0 text-center text-16xl text-gray-gray-900 font-footer-footer-sm"
+        className="mt-5 self-stretch  flex flex-row items-start justify-start py-10 pr-[13px] pl-[25px] box-border max-w-full shrink-0 text-center text-16xl text-gray-gray-900 font-footer-footer-sm"
         id="highlights"
       >
         <div className="flex-1 flex flex-col items-center justify-start gap-[27px_0px] max-w-full">
@@ -74,19 +74,18 @@ const Highlights = () => {
                   fontFamily: "inter",
                 }}
               />
-              <h1
-                className="m-0 self-stretch relative text-inherit text-4xl tracking-tighter leading-[50px]  mq450:text-2xl mq450:leading-[33px] mq750:text-9xl mq750:leading-[44px]"
-                style={{
-                  background:
-                    "linear-gradient(to right, rgba(103, 226, 114, 1), rgba(22, 139, 27, 1))",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                <p className="m-0">
+              <div className=" text-4xl font-bold  bg-clip-text leading-[55px] max-md:max-w-full mr-6">
+                <span
+                  style={{
+                    background:
+                      "linear-gradient(to right, rgba(103, 226, 114, 1), rgba(22, 139, 27, 1))",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
                   Placement Highlights & Student Recognitions
-                </p>
-              </h1>
+                </span>
+              </div>
             </div>
           </div>
         </div>
