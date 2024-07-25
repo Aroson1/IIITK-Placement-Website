@@ -45,7 +45,7 @@ const sliderContent = data.map((item, index) => (
           <span className="overlay"></span>
           <h2
             className="name px-2 flex justify-center items-center"
-            style={{ zIndex: 10 }}
+            style={{ zIndex: 10, alignContent:'space-around' }}
           >
             {item.title}
           </h2>
@@ -53,8 +53,8 @@ const sliderContent = data.map((item, index) => (
         <div className="card-content">
           <p
             className="description leading-6"
-            // style={{ zIndex: 10, fontFamily: "inter" }}
-            style={{ zIndex: 10 }}
+            style={{ zIndex: 10, fontFamily: "inter" }}
+            // style={{ zIndex: 10 }}
 
           >
             {item.description}

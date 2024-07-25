@@ -73,7 +73,7 @@ const TestimonialCarousel = () => {
                       <p
                         className=" tracking-tight text-slate-700 text-md"
                         style={{
-                          // fontFamily : 'inter',
+                          fontFamily : 'inter',
                         }}
                       >
                         {testimonial.quote}
