@@ -51,8 +51,8 @@ function Slider1() {
   const colors = [
     // { year: "Year 2020-21", pdf: "./brochures/Placement Brochure'23.pdf" },
     // { year: "Year 2021-22", pdf: "./brochures/Placement Brochure'23.pdf" },
-    // { year: "Year 2022-23", pdf: "./brochures/Placement Brochure'23.pdf" },
-    { year: "Year 2023-24", pdf: "./brochures/Placement Brochure'23.pdf" },
+    { year: "Year 2022-23", pdf: "./brochures/Placement Brochure'23.pdf" },
+    // { year: "Year 2023-24", pdf: "./brochures/Placement Brochure'23.pdf" },
   ];
   var isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
 
