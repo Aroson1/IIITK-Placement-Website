@@ -76,8 +76,8 @@ const Footer = () => {
             </li>
             <li>
               Email:{" "}
-              <a href="mailto:placementcoordinator@iiitkottayam.ac.in">
-                placementcoordinator@iiitkottayam.ac.in
+              <a href="mailto:placement@iiitkottayam.ac.in">
+              placement@iiitkottayam.ac.in
               </a>{" "}
             </li>
             <li>
