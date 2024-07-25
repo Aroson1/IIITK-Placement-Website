@@ -13,9 +13,28 @@ import StatisticsDisplay from "../home/sections/stats";
 import viewPdf from "../../public/assets/viewPdf.svg";
 import statsData from "../data_models/stats.json";
 
-const renderCenterLeftControls = () => {};
+const renderCenterLeftControls = ({ previousSlide }) => (
+  <button
+    onClick={previousSlide}
+    className="carousel-control items-start inline-block"
+  >
+    <Image src={btnleft} alt="left-button" width={70} height={70} />
+  </button>
+);
 
-const renderCenterRightControls = () => {};
+const renderCenterRightControls = ({ nextSlide }) => {
+  return (
+    <button onClick={nextSlide} className="carousel-control">
+      <Image
+        src={btnleft}
+        alt="right-button"
+        width={70}
+        height={70}
+        style={{ transform: "rotate(-180deg)" }}
+      />
+    </button>
+  );
+};
 
 export const CustomDots = () => {
   const { totalPages, currentPage, goToPage } = Carousel();
