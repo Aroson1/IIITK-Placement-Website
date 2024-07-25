@@ -43,12 +43,17 @@ const sliderContent = data.map((item, index) => (
       <div className="card swiper-slide">
         <div className="image-content">
           <span className="overlay"></span>
-          <h2 className="name px-2 flex justify-center" style={{ zIndex: 10 }}>
+          <h2
+            className="name px-2 flex justify-center items-center"
+            style={{ zIndex: 10 }}
+          >
             {item.title}
           </h2>
         </div>
         <div className="card-content">
-          <p className="description" style={{ zIndex: 10 }}>{item.description}</p>
+          <p className="description leading-6" style={{ zIndex: 10 }}>
+            {item.description}
+          </p>
         </div>
       </div>
     </div>

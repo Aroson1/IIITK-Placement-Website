@@ -78,7 +78,7 @@ function Form() {
         <h2 className="self-center mt-6  px-3 text-4xl max-md:text-5xl tracking-tighter leading-10 text-center font-inter text-slate-800 bg-clip-text">
           Register as a{" "}
           <span
-            className="text-black font-bold"
+            className="text-black font-bold font-inter"
             style={{
               background:
                 "linear-gradient(to right, rgba(103, 226, 114, 1), rgba(22, 139, 27, 1))",
@@ -171,17 +171,12 @@ function Page() {
       <Form />
       <TandC />
       <div
-        className="flex justify-center flex-col items-center mt-10 mb-10 px-4"
+        className="flex justify-center flex-col items-center mt-10 mb-10 px-4 pb-4"
         style={{ background: "linear-gradient(to bottom, #0077B6, #0096C7)" }}
       >
-        <span
-          className="font-bold text-3xl text-white mt-10"
-          style={{
-            fontFamily: "Inter",
-          }}
-        >
-          Recruitment Process
-        </span>
+        <div className=" text-4xl font-bold mt-4  bg-clip-text leading-[55px] max-md:max-w-full mr-6">
+          <span className="text-white">Recruitment Process</span>
+        </div>
 
         <ol class="items-center lg:flex mt-10">
           <li class="relative mb-6 sm:mb-0">

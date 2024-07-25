@@ -33,20 +33,9 @@ const TestimonialCarousel = () => {
           zIndex: "1",
         }}
       >
-        <div
-          className="text-center"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
+        <div className=" text-4xl font-bold  bg-clip-text leading-[55px] max-md:max-w-full mr-6">
           <span
-            className="lg:text-4xl font-bold text-gray-800  md:text-2xl text-2xl"
             style={{
-              color: "rgba(26, 32, 44, 1)",
-              fontFamily: "Inter",
               background:
                 "linear-gradient(to right, rgba(103, 226, 114, 1), rgba(22, 139, 27, 1))",
               WebkitBackgroundClip: "text",
@@ -81,7 +70,7 @@ const TestimonialCarousel = () => {
                       ></path>
                     </svg>
                     <blockquote className="relative">
-                      <p className="text-sm tracking-tight text-slate-900">
+                      <p className=" tracking-tight text-slate-700 font-inter text-md">
                         {testimonial.quote}
                       </p>
                     </blockquote>

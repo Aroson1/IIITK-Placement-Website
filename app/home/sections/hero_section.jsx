@@ -22,9 +22,9 @@ export default function Hero() {
                 color: "#66E071",
               }}
             >
-              S
+              T
             </span>
-            TUDENTS <br />
+            RAINING & <br />
             <span
               style={{
                 color: "#66E071",
@@ -53,7 +53,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="max-w-[100%] content" >
+        <div className="max-w-[100%] content">
           <Image
             src={heroimage}
             alt="hero-image"
