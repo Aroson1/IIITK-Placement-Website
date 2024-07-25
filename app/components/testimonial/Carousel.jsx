@@ -70,7 +70,12 @@ const TestimonialCarousel = () => {
                       ></path>
                     </svg>
                     <blockquote className="relative">
-                      <p className=" tracking-tight text-slate-700 font-inter text-md">
+                      <p
+                        className=" tracking-tight text-slate-700 text-md"
+                        style={{
+                          fontFamily: "inter",
+                        }}
+                      >
                         {testimonial.quote}
                       </p>
                     </blockquote>
