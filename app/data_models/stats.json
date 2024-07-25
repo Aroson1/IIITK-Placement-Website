@@ -1,0 +1,158 @@
+{
+  "2023": {
+    "linear": [
+      {
+        "title": "Placement Percentage",
+        "value": 100,
+        "max": 100,
+        "subtitle": "100%",
+        "icon": "📊"
+      },
+      {
+        "title": "No. of Startups",
+        "value": 20,
+        "max": 22,
+        "subtitle": "20",
+        "icon": "🚀"
+      },
+      {
+        "title": "Companies",
+        "value": 76,
+        "max": 86,
+        "subtitle": "76",
+        "icon": "🏢"
+      },
+      {
+        "title": "Median Package",
+        "value": 11,
+        "max": 10.5,
+        "subtitle": "11",
+        "icon": "💼"
+      }
+    ],
+    "circular": [
+      {
+        "title": "Highest Domestic Package",
+        "value": 58.33,
+        "max": 100,
+        "suffix": "LPA"
+      },
+      {
+        "title": "Highest International Package",
+        "value": 23,
+        "max": 44,
+        "suffix": "LPA"
+      },
+      {
+        "title": "Average Package",
+        "value": 14.32,
+        "max": 32,
+        "suffix": "LPA"
+      }
+    ]
+  },
+  "2022": {
+    "linear": [
+      {
+        "title": "Placement Percentage",
+        "value": 98,
+        "max": 100,
+        "subtitle": "98%",
+        "icon": "📊"
+      },
+      {
+        "title": "No. of Startups",
+        "value": 18,
+        "max": 22,
+        "subtitle": "18",
+        "icon": "🚀"
+      },
+      {
+        "title": "Companies",
+        "value": 70,
+        "max": 86,
+        "subtitle": "70",
+        "icon": "🏢"
+      },
+      {
+        "title": "Median Package",
+        "value": 10,
+        "max": 10.5,
+        "subtitle": "10",
+        "icon": "💼"
+      }
+    ],
+    "circular": [
+      {
+        "title": "Highest Domestic Package",
+        "value": 54.33,
+        "max": 100,
+        "suffix": "LPA"
+      },
+      {
+        "title": "Highest International Package",
+        "value": 22,
+        "max": 44,
+        "suffix": "LPA"
+      },
+      {
+        "title": "Average Package",
+        "value": 13.5,
+        "max": 32,
+        "suffix": "LPA"
+      }
+    ]
+  },
+  "2021": {
+    "linear": [
+      {
+        "title": "Placement Percentage",
+        "value": 95,
+        "max": 100,
+        "subtitle": "95%",
+        "icon": "📊"
+      },
+      {
+        "title": "No. of Startups",
+        "value": 15,
+        "max": 22,
+        "subtitle": "15",
+        "icon": "🚀"
+      },
+      {
+        "title": "Companies",
+        "value": 65,
+        "max": 86,
+        "subtitle": "65",
+        "icon": "🏢"
+      },
+      {
+        "title": "Median Package",
+        "value": 9.5,
+        "max": 10.5,
+        "subtitle": "9.5",
+        "icon": "💼"
+      }
+    ],
+    "circular": [
+      {
+        "title": "Highest Domestic Package",
+        "value": 50.33,
+        "max": 100,
+        "suffix": "LPA"
+      },
+      {
+        "title": "Highest International Package",
+        "value": 20,
+        "max": 44,
+        "suffix": "LPA"
+      },
+      {
+        "title": "Average Package",
+        "value": 12.5,
+        "max": 32,
+        "suffix": "LPA"
+      }
+    ]
+  }
+}

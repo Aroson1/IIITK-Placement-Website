@@ -15,6 +15,7 @@ export default function Home() {
       <People />
       <PastRecruiters />
       <Brochures />
+
       {/* <About /> */}
       {/* <News /> */}
       <PointOfContact />

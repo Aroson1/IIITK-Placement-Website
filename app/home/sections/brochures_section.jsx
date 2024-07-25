@@ -9,6 +9,7 @@ import prev from "../../../public/prev.svg";
 import stats from "../../../public/stats.svg";
 import { useMediaQuery } from "react-responsive";
 import StatisticsDisplay from "./stats";
+import Slider3 from "../../components/StatsCarousel";
 const renderBottomCenterControls = ({
   slideCount,
   nextSlide,
@@ -57,15 +58,7 @@ function Slider1() {
   var isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
 
   return (
-    <div
-      className="section w-full mx-auto" 
-      style={
-        {
-         
-        }
-      }
-      id="brochures"
-    >
+    <div className="section w-full mx-auto" style={{}} id="brochures">
       <Carousel
         slidesToScroll={1}
         // changed to 1 as only current brochure is available
@@ -132,7 +125,6 @@ export default function App() {
         className="innersection flex flex-col items-center justify-center relative bg-green-700 p-[3%] md:p-[4%] lg:p-[4%]"
         style={{
           backgroundColor: "rgba(249, 249, 255, 1)",
-          zIndex: "1",
         }}
       >
         <div
@@ -158,10 +150,8 @@ export default function App() {
             Placement Statistics & Brochures
           </span>
         </div>
-
-        <Slider1 />
-        <StatisticsDisplay />
       </div>
+      <Slider3 />
     </div>
   );
 }
