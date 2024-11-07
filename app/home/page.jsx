@@ -13,7 +13,6 @@ export default function Home() {
       <NavBar />
       <Hero />
       <People />
-      <PastRecruiters />
       <Brochures />
 
       {/* <About /> */}
@@ -21,6 +20,8 @@ export default function Home() {
       <PointOfContact />
       {/* <Highlights /> */}
       {/* <LogoGrid /> */}
+      <PastRecruiters />
+
       <Footer />
     </>
   );

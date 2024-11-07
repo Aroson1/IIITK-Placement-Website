@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
-import heroimage from "../../../public/images/download.jpg";
-// import heroimage from "../../../public/images/iiitk.jpeg";
+// import heroimage from "../../../public/images/download.jpg";
+import heroimage from "../../../public/images/iiitk.JPEG";
 
 import Image from "next/image";
 

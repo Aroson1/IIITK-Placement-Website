@@ -94,7 +94,18 @@ function Form() {
           Please fill the form below. Feel free to add as much detail as needed.
         </p>
       </div>
-      <MultiStepForm />
+      {/* <MultiStepForm /> */}
+      <section className="flex justify-center w-full px-4 py-8">
+        <div className="w-full max-w-[800px]">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeFxY-rT--c5HqwRtjqBnYJhE-O05lxfJFZCDI154MlciAtQg/viewform?embedded=true"
+            className="w-full min-h-[400px] border-0"
+            title="Recruiter Registration Form"
+          >
+            Loading…
+          </iframe>
+        </div>
+      </section>
     </main>
   );
 }
@@ -182,13 +193,21 @@ function TandC() {
 function Page() {
   return (
     <>
+
       <Navbar />
       <Hero />
       <Form />
+
       <TandC />
       <div
         className="flex justify-center flex-col items-center mt-10 mb-10 px-4 pb-4"
-        style={{ background: "linear-gradient(to bottom, #0077B6, #0096C7)" }}
+        style={{
+
+          backgroundColor: '#FFFFFF',
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(245,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2367E272'/%3E%3Cstop offset='1' stop-color='%23168B1B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='16' height='16' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23FFFFFF' cx='8' cy='8' r='8'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.12'/%3E%3C/svg%3E")`,
+          backgroundAttachment: 'fixed',
+
+        }}
       >
         <div className=" text-4xl font-bold mt-4  bg-clip-text leading-[55px] max-md:max-w-full mr-6">
           <span className="text-white">Recruitment Process</span>

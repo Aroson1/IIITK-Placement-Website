@@ -61,7 +61,7 @@ const TestimonialCarousel = () => {
                       height="78"
                       className="absolute left-6 top-6 fill-slate-100"
                       style={{
-                        color: "", // Modified color to be darker
+                        color: "", 
                       }}
                     >
                       <path
