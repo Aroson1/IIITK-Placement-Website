@@ -1,16 +1,17 @@
 [
   {
-    "name": "Dr. Rajiv V. Dharaskar",
-    "role": "Director IIIT Kottayam",
-    "image": "/images/peoples_section/director.jpg",
-     "message": "IIIT Kottayam offers a well-rounded education that goes beyond academics. Their program starts with a comprehensive orientation packed with activities, guest speakers, and skill-building workshops. The curriculum is designed to provide a strong foundation with core courses and electives for further exploration. Hands-on learning is emphasized through labs, projects, and access to state-of-the-art innovation labs. To broaden perspectives, students even have the option to spend a semester abroad. Looking beyond academics, IIIT Kottayam fosters a vibrant campus life. They host guest lectures, seminars, and competitions to stimulate intellectual growth. Despite being a young institution, their students have already achieved success in competitions and internships. Sports and cultural activities are also encouraged, preparing students for a diverse and collaborative future. With a strong focus on both academics and holistic development, IIIT Kottayam is on track to become a leader in quality education."
-  },
-  {
     "name": "Dr. M Radhakrishnan",
     "role": "Registrar IIIT Kottayam",
     "image": "/images/peoples_section/registrar1.jpg",
     "message": "IIIT Kottayam bridges the gap between students, employers, alumni, and student groups. This fosters opportunities like internships and jobs, while creating a lively and connected IIIT Kottayam community. We invite you to join our campus recruitment events, and hope to build a lasting and successful partnership. Together, we can create a path to success for our students and make the IIIT Kottayam community even stronger."
   },
+  {
+    "name": "Dr. Rajiv V. Dharaskar",
+    "role": "Ex-Director IIIT Kottayam",
+    "image": "/images/peoples_section/director.jpg",
+    "message": "IIIT Kottayam offers a well-rounded education that goes beyond academics. Their program starts with a comprehensive orientation packed with activities, guest speakers, and skill-building workshops. The curriculum is designed to provide a strong foundation with core courses and electives for further exploration. Hands-on learning is emphasized through labs, projects, and access to state-of-the-art innovation labs. To broaden perspectives, students even have the option to spend a semester abroad. Looking beyond academics, IIIT Kottayam fosters a vibrant campus life. They host guest lectures, seminars, and competitions to stimulate intellectual growth. Despite being a young institution, their students have already achieved success in competitions and internships. Sports and cultural activities are also encouraged, preparing students for a diverse and collaborative future. With a strong focus on both academics and holistic development, IIIT Kottayam is on track to become a leader in quality education."
+  },
+
   {
     "name": "Prof P. Mohanan",
     "role": "Professor In-charge (Academics)",
