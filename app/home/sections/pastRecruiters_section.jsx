@@ -3,6 +3,8 @@ import * as React from "react";
 import logo from "../../../public/images/companies.svg";
 import Image from "next/image";
 import arrow from "../../../public/stats.svg";
+import Link from "next/link";
+
 import { useMediaQuery } from "react-responsive";
 
 export default function PastRecruiters() {
@@ -10,16 +12,18 @@ export default function PastRecruiters() {
 
   return (
     <div
-      className={`flex flex-col pt-10 ${isSmallScreen ? "px-0" : "px-5 md:px-8"} `}
+      className={`flex flex-col pt-10 ${
+        isSmallScreen ? "px-0" : "px-5 md:px-8"
+      } `}
       id="about"
     >
       <div className="w-full max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
-          <div className="flex flex-col max-md:ml-0 w-full ">
+          <div className="flex flex-col w-full max-md:ml-0 ">
             <div className="max-md:mt-3 max-md:max-w-full">
-              <div className="flex  max-md:flex-col max-md:gap-0 max-md:">
+              <div className="flex max-md:flex-col max-md:gap-0 max-md:">
                 <div className="flex flex-col w-3/5 max-md:ml-0 max-md:w-full ">
-                  <div className="flex flex-col grow px-5 mt-20 max-md:mt-10 max-md:max-w-full ">
+                  <div className="flex flex-col px-5 mt-20 grow max-md:mt-10 max-md:max-w-full ">
                     <div
                       className="h-[5px] w-[69px] "
                       style={{
@@ -28,7 +32,6 @@ export default function PastRecruiters() {
                       }}
                     />
                     <div className="mt-5 text-4xl font-bold  bg-clip-text leading-[55px] max-md:max-w-full mr-6">
-                      
                       {"   "}
                       <span>Past</span>
                       <br />
@@ -43,6 +46,19 @@ export default function PastRecruiters() {
                         Recruiters
                       </span>
                     </div>
+                    <Link href="/past-recruiters">
+                      <div style={{ display: "flex" }}>
+                        <div
+                          className="grow"
+                          style={{
+                            color: "rgba(78, 220, 72, 1)",
+                          }}
+                        >
+                          View More Recruiters
+                        </div>
+                        <Image src={arrow} />
+                      </div>
+                    </Link>
                   </div>
                 </div>
 

@@ -1,0 +1,442 @@
+[
+  {
+    "name": "Husqvarna",
+    "logo": "/images/company-logos/husqvarna.png",
+    "location": {
+      "city": "Kochi",
+      "state": "India"
+    }
+  },
+  {
+    "name": "HyreSnap",
+    "logo": "/images/company-logos/hyresnap.jpeg",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "IBM Research",
+    "logo": "/images/company-logos/ibm_research.jpeg",
+    "location": {
+      "city": "Chennai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "IBM",
+    "logo": "/images/company-logos/ibm.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Ignitarium",
+    "logo": "/images/company-logos/ignitarium.png",
+    "location": {
+      "city": "Kochi",
+      "state": "India"
+    }
+  },
+  {
+    "name": "iManage",
+    "logo": "/images/company-logos/imanage.png",
+    "location": {
+      "city": "Mumbai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "IndiaMART",
+    "logo": "/images/company-logos/indiamart.png",
+    "location": {
+      "city": "Chennai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Infosys",
+    "logo": "/images/company-logos/infosys.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Innominds",
+    "logo": "/images/company-logos/innominds.png",
+    "location": {
+      "city": "Mumbai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Intellect",
+    "logo": "/images/company-logos/intellect.jpeg",
+    "location": {
+      "city": "Chennai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Intellipaat",
+    "logo": "/images/company-logos/intellipaat.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "ITC Infotech",
+    "logo": "/images/company-logos/itc_infotech.jpeg",
+    "location": {
+      "city": "Kochi",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Ivy",
+    "logo": "/images/company-logos/ivy.png",
+    "location": {
+      "city": "Mumbai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Kinaxis",
+    "logo": "/images/company-logos/kinaxis.png",
+    "location": {
+      "city": "Chennai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Kottakkal",
+    "logo": "/images/company-logos/kottackal.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Kyron",
+    "logo": "/images/company-logos/kyron.png",
+    "location": {
+      "city": "Mumbai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Litmus7",
+    "logo": "/images/company-logos/litmus7.jpeg",
+    "location": {
+      "city": "Chennai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Loyalty Juggernaut",
+    "logo": "/images/company-logos/loyalty_juggernaut.png",
+    "location": {
+      "city": "Kochi",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Lybl",
+    "logo": "/images/company-logos/lybl.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "MAQ Software",
+    "logo": "/images/company-logos/maq_software.png",
+    "location": {
+      "city": "Mumbai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "McKinley",
+    "logo": "/images/company-logos/mckinley.png",
+    "location": {
+      "city": "Chennai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "MediaNet",
+    "logo": "/images/company-logos/medianet.jpeg",
+    "location": {
+      "city": "Kochi",
+      "state": "India"
+    }
+  },
+  {
+    "name": "mindworks",
+    "logo": "/images/company-logos/mindworks.png",
+    "location": {
+      "city": "Mumbai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "mitsogo",
+    "logo": "/images/company-logos/mitsogo.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "nagarro",
+    "logo": "/images/company-logos/nagarro.jpeg",
+    "location": {
+      "city": "Chennai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "nest_gpu",
+    "logo": "/images/company-logos/nest_gpu.png",
+    "location": {
+      "city": "Kochi",
+      "state": "India"
+    }
+  },
+  {
+    "name": "nest",
+    "logo": "/images/company-logos/nest.jpg",
+    "location": {
+      "city": "Mumbai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Nissan-New",
+    "logo": "/images/company-logos/nissan.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "nvidea",
+    "logo": "/images/company-logos/nvidea.png",
+    "location": {
+      "city": "Chennai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Parent-logo",
+    "logo": "/images/company-logos/Parent-logo.png",
+    "location": {
+      "city": "Kochi",
+      "state": "India"
+    }
+  },
+  {
+    "name": "prolifics",
+    "logo": "/images/company-logos/prolifics.jpg",
+    "location": {
+      "city": "Mumbai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "publicis-sapient",
+    "logo": "/images/company-logos/publicis-sapient.jpg",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Qburst-Logo",
+    "logo": "/images/company-logos/Qburst-Logo.png",
+    "location": {
+      "city": "Chennai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "quest_global",
+    "logo": "/images/company-logos/quest_global.jpg",
+    "location": {
+      "city": "Kochi",
+      "state": "India"
+    }
+  },
+  {
+    "name": "real-variable",
+    "logo": "/images/company-logos/real_variable.png",
+    "location": {
+      "city": "Mumbai",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Recruit-CRM",
+    "logo": "/images/company-logos/recruit_crm.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Agoda",
+    "logo": "/images/company-logos/agoda.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Accolite",
+    "logo": "/images/company-logos/accolite.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Acsia",
+    "logo": "/images/company-logos/acsia.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Amazon",
+    "logo": "/images/company-logos/amazon.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Anthem",
+    "logo": "/images/company-logos/anthem.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Byju's",
+    "logo": "/images/company-logos/byjus.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Betsol",
+    "logo": "/images/company-logos/betsol.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Binocs",
+    "logo": "/images/company-logos/binocs.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "BirlaSoft",
+    "logo": "/images/company-logos/birlasoft.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Brane",
+    "logo": "/images/company-logos/brane.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Coginizant",
+    "logo": "/images/company-logos/cognizant.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Cisco",
+    "logo": "/images/company-logos/cisco.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Delloitte",
+    "logo": "/images/company-logos/deloitte.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Dotpe",
+    "logo": "/images/company-logos/dotpe.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Entrupy",
+    "logo": "/images/company-logos/entrupy.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Experion",
+    "logo": "/images/company-logos/experion.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Goldman Sachs",
+    "logo": "/images/company-logos/goldman.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Grab",
+    "logo": "/images/company-logos/grab.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  },
+  {
+    "name": "Arintra",
+    "logo": "/images/company-logos/arintra.png",
+    "location": {
+      "city": "Bangalore",
+      "state": "India"
+    }
+  }
+]
