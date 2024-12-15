@@ -102,14 +102,16 @@ export default function Slider3() {
                       <h2 className="text-center text-xl font-bold">
                         YEAR {parseInt(year) - 1} - {year}
                       </h2>
-                      <Image
-                        src={viewPdf}
-                        alt="view-pdf"
-                        width={30}
-                        height={20}
-                        style={{ cursor: "pointer" }}
-                        onClick={() => window.open(pdf[year], "_blank")}
-                      />
+                      {pdf[year] && (
+                        <Image
+                          src={viewPdf}
+                          alt="view-pdf"
+                          width={30}
+                          height={20}
+                          style={{ cursor: "pointer" }}
+                          onClick={() => window.open(pdf[year], "_blank")}
+                        />
+                      )}
                     </div>
                     <StatisticsDisplay data={data} />
                   </div>

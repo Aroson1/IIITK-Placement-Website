@@ -1,67 +1,40 @@
 import React from "react";
+import { Trophy, Users, Briefcase, Award } from "lucide-react";
 
 const StatisticsDisplay = ({ data }) => {
   if (!data) return null;
 
-  return (
-    <div className="pt-4 sm:pt-8">
-      <div className="space-y-4 sm:space-y-6">
-        {/* Linear progress bars */}
-        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-          {data.linear.map((item, index) => (
-            <div key={index} className="flex items-center space-x-2">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-[#4edc48] rounded-full flex items-center justify-center text-2xl sm:text-3xl md:text-4xl">
-                {item.icon}
-              </div>
-              <div className="flex-1">
-                <div className="w-full bg-gray-200 rounded-full h-4 sm:h-5 md:h-6 mb-1">
-                  <div
-                    className="bg-[#4edc48] h-4 sm:h-5 md:h-6 rounded-full text-xs flex items-center justify-center text-white"
-                    style={{ width: `${(item.value / item.max) * 100}%` }}
-                  >
-                    {item.subtitle}
-                  </div>
-                </div>
-                <div className="text-xs sm:text-sm text-gray-600">
-                  {item.title}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+  // Map of icons for different statistics
+  const iconMap = {
+    "Highest CTC": Trophy,
+    "Average CTC": Award,
+    "Individual Placements": Users,
+    "No. of Offers": Briefcase
+  };
 
-        {/* Semi-circular progress bars */}
-        <div className="flex flex-col sm:flex-row justify-between mt-4 sm:mt-8 space-y-4 sm:space-y-0">
-          {data.circular.map((item, index) => (
-            <div key={index} className="text-center">
-              <div className="relative inline-flex items-center justify-center overflow-hidden w-32 sm:w-36 md:w-40 h-20 sm:h-22 md:h-24">
-                <svg className="w-full h-full" viewBox="0 0 100 60">
-                  <path
-                    d="M 10,50 A 40,40 0 1,1 90,50"
-                    fill="none"
-                    stroke="#E5E7EB"
-                    strokeWidth="12"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M 10,50 A 40,40 0 1,1 90,50"
-                    fill="none"
-                    stroke="#4edc48"
-                    strokeWidth="12"
-                    strokeLinecap="round"
-                    strokeDasharray={`${
-                      (item.value / item.max + 0.2) * 126
-                    } 126`}
-                  />
-                </svg>
-                <span className="absolute text-sm sm:text-base md:text-xl font-bold pt-8 sm:pt-10 md:pt-12 text-gray-600">{`${item.value} ${item.suffix}`}</span>
+  return (
+    <div className="p-4 sm:p-6 bg-gray-50 rounded-lg">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {Object.entries(data).map(([key, value]) => {
+          const IconComponent = iconMap[key] || Trophy;
+          
+          return (
+            <div 
+              key={key} 
+              className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 hover:shadow-lg transition-shadow"
+            >
+              <div className="w-16 h-16 bg-[#4edc48] bg-opacity-20 rounded-full flex items-center justify-center">
+                <IconComponent className="w-8 h-8 text-[#4edc48]" />
               </div>
-              <div className="mt-2 text-xs sm:text-sm text-gray-600">
-                {item.title}
+              <div className="flex-grow">
+                <div className="text-xl font-bold text-gray-800">
+                  {value} {key.includes("CTC") ? "LPA" : ""}
+                </div>
+                <div className="text-sm text-gray-500">{key}</div>
               </div>
             </div>
-          ))}
-        </div>
+          );
+        })}
       </div>
     </div>
   );

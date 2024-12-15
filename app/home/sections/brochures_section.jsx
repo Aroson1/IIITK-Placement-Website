@@ -49,7 +49,7 @@ const renderCenterRightControls = ({}) => <div></div>;
 const renderCenterLeftControls = ({}) => <div></div>;
 
 function Slider1() {
-  const colors = [
+  const brochures = [
     // { year: "Year 2020-21", pdf: "./brochures/Placement Brochure'23.pdf" },
     // { year: "Year 2021-22", pdf: "./brochures/Placement Brochure'23.pdf" },
     { year: "Year 2022-23", pdf: "./brochures/Placement Brochure'23.pdf" },
@@ -61,28 +61,23 @@ function Slider1() {
     <div className="section w-full mx-auto" style={{}} id="brochures">
       <Carousel
         slidesToScroll={1}
-        // changed to 1 as only current brochure is available
         slidesToShow={isSmallScreen ? 1 : 1}
         scrollMode="remainder"
         cellSpacing={isSmallScreen ? "10" : "50"}
         disableEdgeSwiping={false}
         dragging={false}
-        // Hide the controls as only one brochure is available
-        // renderBottomCenterControls={renderBottomCenterControls}
-        // renderCenterRightControls={renderCenterRightControls}
-        // renderCenterLeftControls={renderCenterLeftControls}
         renderBottomCenterControls={null}
         renderCenterRightControls={null}
         renderCenterLeftControls={null}
         style={{
           paddingTop: "40px",
-          textAlign: "center", // Center text inside carousel items
+          textAlign: "center",
         }}
       >
-        {colors.map((ele) => (
+        {brochures.map((ele) => (
           <div
             key={`${ele.year}`}
-            className="color m-auto" // Added m-auto for automatic margin on all sides, centering the item
+            className="color m-auto"
             style={{
               display: "flex",
               flexDirection: "column",
@@ -103,14 +98,16 @@ function Slider1() {
                 fontSize: "16px",
               }}
             >{`${ele.year}`}</span>
-            <button>
-              <Image
-                src={stats}
-                alt="stats"
-                style={{ cursor: "pointer" }}
-                onClick={() => window.open(ele.pdf, "_blank")}
-              />
-            </button>
+            {ele.pdf && (
+              <button>
+                <Image
+                  src={stats}
+                  alt="stats"
+                  style={{ cursor: "pointer" }}
+                  onClick={() => window.open(ele.pdf, "_blank")}
+                />
+              </button>
+            )}
           </div>
         ))}
       </Carousel>
